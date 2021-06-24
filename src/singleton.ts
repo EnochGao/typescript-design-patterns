@@ -29,4 +29,5 @@ class HungrySingleton {
 export default function singletonMain() {
   console.log('懒汉式：：', LazySingleton.getInstance() === LazySingleton.getInstance());
   console.log('饿汉式：：', HungrySingleton.getInstance() === HungrySingleton.getInstance());
+  console.log('%c------------', 'color:green;font-size:18px');
 };
