@@ -17,3 +17,8 @@ import abstractFactoryMain from './abstract-factory';
 console.groupCollapsed('抽象工厂');
 abstractFactoryMain();
 console.groupEnd();
+
+import builderClientMain from './builder';
+console.groupCollapsed('建造者');
+builderClientMain();
+console.groupEnd();
