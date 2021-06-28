@@ -22,3 +22,8 @@ import builderClientMain from './builder';
 console.groupCollapsed('建造者');
 builderClientMain();
 console.groupEnd();
+
+import prototypeMain from './prototype';
+console.groupCollapsed('原型模式');
+prototypeMain();
+console.groupEnd();

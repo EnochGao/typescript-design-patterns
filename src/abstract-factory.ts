@@ -27,7 +27,6 @@ class ProductB implements AbstractProductB {
   }
 }
 
-
 class ConcreteFactory implements AbstractFactory {
   createProductA(): AbstractProductA {
     return new ProductA();
@@ -36,8 +35,6 @@ class ConcreteFactory implements AbstractFactory {
     return new ProductB();
   }
 }
-
-
 export default function abstractFactoryMain() {
   const factory: AbstractFactory = new ConcreteFactory();
   const productA: ProductA = factory.createProductA();
