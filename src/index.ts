@@ -38,9 +38,15 @@ console.groupEnd();
 
 console.group('结构型');
 
+
 console.groupCollapsed('适配器模式');
 import adapterMain from './adapter';
 adapterMain();
+console.groupEnd();
+
+console.groupCollapsed('桥接模式');
+import bridgeMain from './bridge';
+bridgeMain();
 console.groupEnd();
 
 
