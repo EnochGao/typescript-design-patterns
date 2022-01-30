@@ -1,6 +1,6 @@
 // 单列模式（singleton）:保证一个类仅有一个实例，并提供一个访问它的全局访问点
 // 懒汉式&饿汉式
-class LazySingleton {
+export class LazySingleton {
 
   private static instance: LazySingleton;
 
@@ -15,7 +15,7 @@ class LazySingleton {
   }
 }
 
-class HungrySingleton {
+export class HungrySingleton {
 
   private static instance: HungrySingleton = new HungrySingleton('饿汉式');
 
@@ -25,9 +25,3 @@ class HungrySingleton {
     return HungrySingleton.instance;
   }
 }
-
-export default function singletonMain() {
-  console.log('懒汉式：：', LazySingleton.getInstance() === LazySingleton.getInstance());
-  console.log('饿汉式：：', HungrySingleton.getInstance() === HungrySingleton.getInstance());
-  console.log('%c------------', 'color:green;font-size:18px');
-};

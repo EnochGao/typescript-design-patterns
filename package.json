@@ -4,23 +4,15 @@
   "description": "My webpack project",
   "main": "index.js",
   "scripts": {
-    "start": "npm run serve",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production --node-env=production",
-    "build:dev": "webpack --mode=development",
-    "build:prod": "webpack --mode=production --node-env=production",
-    "watch": "webpack --watch",
-    "serve": "webpack serve"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "EnochGao",
   "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.5.5"
+  },
   "devDependencies": {
-    "@webpack-cli/generators": "^2.1.0",
-    "html-webpack-plugin": "^5.3.1",
-    "ts-loader": "^9.2.2",
-    "typescript": "^4.3.2",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
+    "@types/node": "^17.0.13"
   }
 }

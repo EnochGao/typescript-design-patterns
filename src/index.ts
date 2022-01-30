@@ -1,54 +1,70 @@
-console.group('创建型');
+import readline from 'readline';
+import { SingletonPattern } from './singleton/index';
 
-console.groupCollapsed('单例模式');
-import singletonMain from './singleton';
-singletonMain();
-console.groupEnd();
+export abstract class Pattern {
 
-console.groupCollapsed('简单工厂');
-import simpleFactoryMain from './simple-factory';
-simpleFactoryMain();
-console.groupEnd();
+  abstract show(): void;
 
-console.groupCollapsed('工厂方法');
-import factoryMethodMain from './factory-method';
-factoryMethodMain();
-console.groupEnd();
+  constructor() {
+    console.log('%c------------', 'color:green;font-size:18px');
+  }
 
-console.groupCollapsed('抽象工厂');
-import abstractFactoryMain from './abstract-factory';
-abstractFactoryMain();
-console.groupEnd();
+}
 
-console.groupCollapsed('建造者');
-import builderClientMain from './builder';
-builderClientMain();
-console.groupEnd();
-
-console.groupCollapsed('原型模式');
-import prototypeMain from './prototype';
-prototypeMain();
-console.groupEnd();
-
-console.groupEnd();
-
-
-
-
-
-console.group('结构型');
-
-
-console.groupCollapsed('适配器模式');
-import adapterMain from './adapter';
-adapterMain();
-console.groupEnd();
-
-console.groupCollapsed('桥接模式');
-import bridgeMain from './bridge';
-bridgeMain();
-console.groupEnd();
+class PatternShow {
+  printMenu(): void {
+    const menu = "= Creational Patterns == \n" +
+      "  1: Singleton \n" +
+      "  2: Abstract factory \n" +
+      "  3: Factory method \n" +
+      "  4: Builder \n" +
+      "  5: Prototype \n\n" +
+      "= Structural Patterns == \n" +
+      "  6: Adapter \n" +
+      "  7: Bridge \n" +
+      "  8: Composite \n" +
+      "  9: Decorator \n" +
+      " 10: Facade \n" +
+      " 11: Flyweight \n" +
+      " 12: Proxy \n\n" +
+      "= Behavioral Patterns == \n" +
+      " 13: Chain of responsibility \n" +
+      " 14: Command \n" +
+      " 15: Interpreter \n" +
+      " 16: Iterator \n" +
+      " 17: Mediator \n" +
+      " 18: Memento \n" +
+      " 19: Observer \n" +
+      " 20: State \n" +
+      " 21: Strategy \n" +
+      " 22: Template method \n" +
+      " 23: Visitor \n";
 
 
+    console.log("\n\n");
+    console.log("==== Choose one pattern to demonstrate ====");
+    console.log("\n");
+    console.log(menu);
+  }
 
-console.groupEnd();
+  show(pattern: Pattern): void {
+    pattern.show();
+  }
+
+  start(): void {
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+
+    this.printMenu();
+    rl.question("Which pattern would you like to check?   ", function (answer) {
+      switch (+answer) {
+        case 1: this.show(new SingletonPattern()); break;
+        default: break;
+      }
+      rl.close();
+    });
+
+  }
+}
