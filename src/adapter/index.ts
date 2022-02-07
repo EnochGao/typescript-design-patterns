@@ -1,7 +1,7 @@
 import { Pattern } from "../index";
 import { Adaptee, ClassAdapter, ObjectAdapter, Target } from "./adapter";
 
-export class AdapterPattern extends Pattern {
+export class AdapterPattern implements Pattern {
 
   show() {
     const target: Target = new ClassAdapter();

@@ -1,7 +1,7 @@
 import { Pattern } from "../index";
 import { ConcreteFactory, Factory, Product } from "./factory-method";
 
-export class FactoryMethodPattern extends Pattern {
+export class FactoryMethodPattern implements Pattern {
 
   show() {
     const factory: Factory = new ConcreteFactory();

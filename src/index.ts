@@ -8,14 +8,8 @@ import { PrototypePattern } from './prototype/index';
 import { SimpleFactoryPattern } from './simple_factory/index';
 import { SingletonPattern } from './singleton/index';
 
-export abstract class Pattern {
-
-  constructor() {
-    console.log('%c------------', 'color:green;font-size:18px');
-  }
-
-  abstract show(): void;
-
+export interface Pattern {
+  show(): void;
 }
 
 class PatternShow {
@@ -61,7 +55,7 @@ class PatternShow {
     });
 
     this.printMenu();
-    rl.question("Which pattern would you like to check?   ", function (answer: string) {
+    rl.question("Which pattern would you like to check?   ", (answer: string) => {
       switch (+answer) {
         case 1: this.show(new SingletonPattern()); break;
         case 2: this.show(new AbstractFactoryPattern()); break;

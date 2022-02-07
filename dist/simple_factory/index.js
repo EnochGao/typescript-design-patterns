@@ -1,27 +1,9 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SimpleFactoryPattern = void 0;
-var index_1 = require("../index");
 var simple_factory_1 = require("./simple-factory");
-var SimpleFactoryPattern = /** @class */ (function (_super) {
-    __extends(SimpleFactoryPattern, _super);
+var SimpleFactoryPattern = /** @class */ (function () {
     function SimpleFactoryPattern() {
-        return _super !== null && _super.apply(this, arguments) || this;
     }
     SimpleFactoryPattern.prototype.show = function () {
         var productA = simple_factory_1.Factory.createProduct('A');
@@ -30,5 +12,5 @@ var SimpleFactoryPattern = /** @class */ (function (_super) {
         productB.use();
     };
     return SimpleFactoryPattern;
-}(index_1.Pattern));
+}());
 exports.SimpleFactoryPattern = SimpleFactoryPattern;

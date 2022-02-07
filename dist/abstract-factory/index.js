@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AbstractFactoryPattern = void 0;
-// import { Pattern } from "../index";
 var abstract_factory_1 = require("./abstract-factory");
 var AbstractFactoryPattern = /** @class */ (function () {
     function AbstractFactoryPattern() {

@@ -1,7 +1,7 @@
 import { Pattern } from "../index";
 import { Abstraction, ConcreteImplementorA, Implementor, RefinedAbstraction } from "./bridge";
 
-export class BridgePattern extends Pattern {
+export class BridgePattern implements Pattern{
 
   show() {
     const implementorA: Implementor = new ConcreteImplementorA();

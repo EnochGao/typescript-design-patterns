@@ -1,7 +1,7 @@
 import { Pattern } from "../index";
 import { Prototype, RealizeType } from "./prototype";
 
-export class PrototypePattern extends Pattern {
+export class PrototypePattern implements Pattern{
 
   show() {
     const prototype: Prototype = new RealizeType();

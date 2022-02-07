@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Pattern = void 0;
 var readline = require("readline");
 var index_1 = require("./abstract-factory/index");
 var index_2 = require("./adapter/index");
@@ -10,13 +9,6 @@ var index_5 = require("./factory_method/index");
 var index_6 = require("./prototype/index");
 var index_7 = require("./simple_factory/index");
 var index_8 = require("./singleton/index");
-var Pattern = /** @class */ (function () {
-    function Pattern() {
-        console.log('%c------------', 'color:green;font-size:18px');
-    }
-    return Pattern;
-}());
-exports.Pattern = Pattern;
 var PatternShow = /** @class */ (function () {
     function PatternShow() {
     }
@@ -54,6 +46,7 @@ var PatternShow = /** @class */ (function () {
         console.log(menu);
     };
     PatternShow.prototype.start = function () {
+        var _this = this;
         var rl = readline.createInterface({
             input: process.stdin,
             output: process.stdout
@@ -62,28 +55,28 @@ var PatternShow = /** @class */ (function () {
         rl.question("Which pattern would you like to check?   ", function (answer) {
             switch (+answer) {
                 case 1:
-                    this.show(new index_8.SingletonPattern());
+                    _this.show(new index_8.SingletonPattern());
                     break;
                 case 2:
-                    this.show(new index_1.AbstractFactoryPattern());
+                    _this.show(new index_1.AbstractFactoryPattern());
                     break;
                 case 3:
-                    this.show(new index_5.FactoryMethodPattern());
+                    _this.show(new index_5.FactoryMethodPattern());
                     break;
                 case 4:
-                    this.show(new index_4.BuilderPattern());
+                    _this.show(new index_4.BuilderPattern());
                     break;
                 case 5:
-                    this.show(new index_6.PrototypePattern());
+                    _this.show(new index_6.PrototypePattern());
                     break;
                 case 6:
-                    this.show(new index_2.AdapterPattern());
+                    _this.show(new index_2.AdapterPattern());
                     break;
                 case 7:
-                    this.show(new index_3.BridgePattern());
+                    _this.show(new index_3.BridgePattern());
                     break;
                 case 24:
-                    this.show(new index_7.SimpleFactoryPattern());
+                    _this.show(new index_7.SimpleFactoryPattern());
                     break;
                 default: break;
             }

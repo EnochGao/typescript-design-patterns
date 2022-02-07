@@ -1,7 +1,7 @@
 import { Pattern } from "../index";
 import { Builder, ConcreteBuilder, Director } from "./builder";
 
-export class BuilderPattern extends Pattern {
+export class BuilderPattern implements Pattern {
 
   show() {
     const builder: Builder = new ConcreteBuilder();
