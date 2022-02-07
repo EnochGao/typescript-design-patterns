@@ -5,37 +5,26 @@
    适配器（Adapter）类：它是一个转换器，通过继承或引用适配者的对象，把适配者接口转换成目标接口，让客户按目标接口的格式访问适配者。
 */
 
-interface Target {
+export interface Target {
   request(): void;
 }
 
-class Adaptee {
+export class Adaptee {
   specificRequest() {
     console.log('specificRequest');
   };
 }
 
-class ClassAdapter extends Adaptee implements Target {
+export class ClassAdapter extends Adaptee implements Target {
   request(): void {
     this.specificRequest();
   }
 }
 
-class ObjectAdapter implements Target {
+export class ObjectAdapter implements Target {
   constructor(private adaptee: Adaptee) {
   }
   request(): void {
     this.adaptee.specificRequest();
   }
 }
-
-
-export default function adapterMain() {
-  const target: Target = new ClassAdapter();
-  target.request();
-
-  const target1: Target = new ObjectAdapter(new Adaptee());
-  target1.request();
-
-  console.log('%c------------', 'color:green;font-size:18px');
-};

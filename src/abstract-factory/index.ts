@@ -1,12 +1,14 @@
-/// <reference path="abstract-factory.ts" />
+import { Pattern } from "../index";
+import { AbstractFactory, ConcreteFactory, ProductA, ProductB } from "./abstract-factory";
 
-namespace AbstractFactoryPattern {
-  export function show() {
+export class AbstractFactoryPattern extends Pattern {
+
+  show(): void {
     const factory: AbstractFactory = new ConcreteFactory();
     const productA: ProductA = factory.createProductA();
     const productB: ProductB = factory.createProductB();
     productA.use();
     productB.eat();
-    console.log('%c------------', 'color:green;font-size:18px');
-  };
+  }
+
 }

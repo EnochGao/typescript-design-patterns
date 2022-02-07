@@ -6,10 +6,10 @@
    ConcreteFactory：具体工厂
  */
 
-interface Product {
+export interface Product {
   use(): void;
 }
-interface Factory {
+export interface Factory {
   factoryMethod(): Product;
 }
 
@@ -20,16 +20,8 @@ class ConcreteProduct implements Product {
   }
 
 }
-class ConcreteFactory implements Factory {
+export class ConcreteFactory implements Factory {
   factoryMethod(): Product {
     return new ConcreteProduct();
   }
 }
-
-export default function factoryMethodMain() {
-  const factory: Factory = new ConcreteFactory();
-  const product: Product = factory.factoryMethod();
-  product.use();
-  console.log('%c------------', 'color:green;font-size:18px');
-
-};

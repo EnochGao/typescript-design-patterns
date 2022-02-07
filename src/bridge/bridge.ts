@@ -6,23 +6,23 @@
 具体实现化（Concrete Implementor）角色：给出实现化角色接口的具体实现。
 */
 
-interface Implementor {
+export interface Implementor {
   operationImpl(): void;
 }
 
-abstract class Abstraction {
+export abstract class Abstraction {
   constructor(protected implementor: Implementor) {
   }
   abstract operation(): void;
 }
 
-class ConcreteImplementorA implements Implementor {
+export class ConcreteImplementorA implements Implementor {
   operationImpl(): void {
     console.log('具体实现化(Concrete Implementor)角色被访问');
   }
 }
 
-class RefinedAbstraction extends Abstraction {
+export class RefinedAbstraction extends Abstraction {
   constructor(implementor: Implementor) {
     super(implementor);
   }
@@ -31,12 +31,3 @@ class RefinedAbstraction extends Abstraction {
     this.implementor.operationImpl();
   }
 }
-
-
-export default function bridgeMain() {
-  const implementorA: Implementor = new ConcreteImplementorA();
-  const refinedAbstraction: Abstraction = new RefinedAbstraction(implementorA);
-  refinedAbstraction.operation();
-
-  console.log('%c------------', 'color:green;font-size:18px');
-};

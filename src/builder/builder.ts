@@ -11,13 +11,13 @@ class Product {
   B: string;
 }
 
-interface Builder {
+export interface Builder {
   buildPartA(): void;
   buildPartB(): void;
   getProduct(): Product;
 }
 
-class ConcreteBuilder implements Builder {
+export class ConcreteBuilder implements Builder {
   product: Product;
   constructor() {
     this.product = new Product();
@@ -34,7 +34,7 @@ class ConcreteBuilder implements Builder {
   }
 }
 
-class Director {
+export class Director {
   builder: Builder;
 
   setBuilder(builder: Builder) {
@@ -47,14 +47,3 @@ class Director {
     return this.builder.getProduct();
   }
 }
-
-
-export default function builderClientMain() {
-  const builder: Builder = new ConcreteBuilder();
-  const director = new Director();
-  director.setBuilder(builder);
-  const product = director.getProduct();
-  console.log('product::', product);
-
-  console.log('%c------------', 'color:green;font-size:18px');
-};

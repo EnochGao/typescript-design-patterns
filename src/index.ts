@@ -1,13 +1,20 @@
-import readline from 'readline';
+import * as readline from 'readline';
+import { AbstractFactoryPattern } from './abstract-factory/index';
+import { AdapterPattern } from './adapter/index';
+import { BridgePattern } from './bridge/index';
+import { BuilderPattern } from './builder/index';
+import { FactoryMethodPattern } from './factory_method/index';
+import { PrototypePattern } from './prototype/index';
+import { SimpleFactoryPattern } from './simple_factory/index';
 import { SingletonPattern } from './singleton/index';
 
 export abstract class Pattern {
 
-  abstract show(): void;
-
   constructor() {
     console.log('%c------------', 'color:green;font-size:18px');
   }
+
+  abstract show(): void;
 
 }
 
@@ -38,17 +45,13 @@ class PatternShow {
       " 20: State \n" +
       " 21: Strategy \n" +
       " 22: Template method \n" +
-      " 23: Visitor \n";
-
+      " 23: Visitor \n" +
+      " 24: SimpleFactory \n";
 
     console.log("\n\n");
     console.log("==== Choose one pattern to demonstrate ====");
     console.log("\n");
     console.log(menu);
-  }
-
-  show(pattern: Pattern): void {
-    pattern.show();
   }
 
   start(): void {
@@ -58,13 +61,25 @@ class PatternShow {
     });
 
     this.printMenu();
-    rl.question("Which pattern would you like to check?   ", function (answer) {
+    rl.question("Which pattern would you like to check?   ", function (answer: string) {
       switch (+answer) {
         case 1: this.show(new SingletonPattern()); break;
+        case 2: this.show(new AbstractFactoryPattern()); break;
+        case 3: this.show(new FactoryMethodPattern()); break;
+        case 4: this.show(new BuilderPattern()); break;
+        case 5: this.show(new PrototypePattern()); break;
+        case 6: this.show(new AdapterPattern()); break;
+        case 7: this.show(new BridgePattern()); break;
+        case 24: this.show(new SimpleFactoryPattern()); break;
         default: break;
       }
       rl.close();
     });
+  }
 
+  private show(pattern: Pattern): void {
+    pattern.show();
   }
 }
+
+new PatternShow().start();

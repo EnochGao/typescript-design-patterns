@@ -1,12 +1,19 @@
 {
   "compilerOptions": {
     "noImplicitAny": true,
-    "module": "system",
+    "baseUrl": "./",
+    "module": "commonjs",
     "target": "es5",
-    "outFile": "index.js"
+    "outDir": "./dist",
+    "strict": false
   },
   "include": [
     "src/**/*.ts",
     "src/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test",
   ]
 }
