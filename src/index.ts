@@ -13,7 +13,36 @@ export interface Pattern {
 }
 
 class PatternShow {
-  printMenu(): void {
+
+  start(): void {
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+
+    this.printMenu();
+
+    rl.question("请选择：", (answer: string) => {
+      switch (+answer) {
+        case 1: this.show(new SingletonPattern()); break;
+        case 2: this.show(new AbstractFactoryPattern()); break;
+        case 3: this.show(new FactoryMethodPattern()); break;
+        case 4: this.show(new BuilderPattern()); break;
+        case 5: this.show(new PrototypePattern()); break;
+        case 6: this.show(new AdapterPattern()); break;
+        case 7: this.show(new BridgePattern()); break;
+        case 24: this.show(new SimpleFactoryPattern()); break;
+        default: break;
+      }
+      rl.close();
+    });
+  }
+
+  private show(pattern: Pattern): void {
+    pattern.show();
+  }
+
+  private printMenu(): void {
     const menu: string = `
       = 创建型 == \n
       1: Singleton \n
@@ -48,33 +77,7 @@ class PatternShow {
     console.log("\n");
     console.log(menu);
   }
-
-  start(): void {
-    const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout
-    });
-
-    this.printMenu();
-    rl.question("请选择：", (answer: string) => {
-      switch (+answer) {
-        case 1: this.show(new SingletonPattern()); break;
-        case 2: this.show(new AbstractFactoryPattern()); break;
-        case 3: this.show(new FactoryMethodPattern()); break;
-        case 4: this.show(new BuilderPattern()); break;
-        case 5: this.show(new PrototypePattern()); break;
-        case 6: this.show(new AdapterPattern()); break;
-        case 7: this.show(new BridgePattern()); break;
-        case 24: this.show(new SimpleFactoryPattern()); break;
-        default: break;
-      }
-      rl.close();
-    });
-  }
-
-  private show(pattern: Pattern): void {
-    pattern.show();
-  }
 }
+
 
 new PatternShow().start();
