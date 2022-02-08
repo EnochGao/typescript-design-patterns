@@ -14,36 +14,37 @@ export interface Pattern {
 
 class PatternShow {
   printMenu(): void {
-    const menu = "= Creational Patterns == \n" +
-      "  1: Singleton \n" +
-      "  2: Abstract factory \n" +
-      "  3: Factory method \n" +
-      "  4: Builder \n" +
-      "  5: Prototype \n\n" +
-      "= Structural Patterns == \n" +
-      "  6: Adapter \n" +
-      "  7: Bridge \n" +
-      "  8: Composite \n" +
-      "  9: Decorator \n" +
-      " 10: Facade \n" +
-      " 11: Flyweight \n" +
-      " 12: Proxy \n\n" +
-      "= Behavioral Patterns == \n" +
-      " 13: Chain of responsibility \n" +
-      " 14: Command \n" +
-      " 15: Interpreter \n" +
-      " 16: Iterator \n" +
-      " 17: Mediator \n" +
-      " 18: Memento \n" +
-      " 19: Observer \n" +
-      " 20: State \n" +
-      " 21: Strategy \n" +
-      " 22: Template method \n" +
-      " 23: Visitor \n" +
-      " 24: SimpleFactory \n";
+    const menu: string = `
+      = 创建型 == \n
+      1: Singleton \n
+      2: Abstract factory \n
+      3: Factory method \n
+      4: Builder \n
+      5: Prototype \n\n
+      = 结构型 == \n
+      6: Adapter \n
+      7: Bridge \n
+      8: Composite \n
+      9: Decorator \n
+      10: Facade \n
+      11: Flyweight \n
+      12: Proxy \n\n
+      = 行为型 == \n
+      13: Chain of responsibility \n
+      14: Command \n
+      15: Interpreter \n
+      16: Iterator \n
+      17: Mediator \n
+      18: Memento \n
+      19: Observer \n
+      20: State \n
+      21: Strategy \n
+      22: Template method \n
+      23: Visitor \n
+      24: SimpleFactory \n
+    `;
 
-    console.log("\n\n");
-    console.log("==== Choose one pattern to demonstrate ====");
+    console.log("==== 选择一个demo实例运行 ====");
     console.log("\n");
     console.log(menu);
   }
@@ -55,7 +56,7 @@ class PatternShow {
     });
 
     this.printMenu();
-    rl.question("Which pattern would you like to check?   ", (answer: string) => {
+    rl.question("请选择：", (answer: string) => {
       switch (+answer) {
         case 1: this.show(new SingletonPattern()); break;
         case 2: this.show(new AbstractFactoryPattern()); break;
