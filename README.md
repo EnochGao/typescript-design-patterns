@@ -2,12 +2,10 @@
 
 运行
 
+``` ssh
+npm run build
 ```
+
+```ssh
 npm run start
-```
-
-or
-
-```
-npm run serve
 ```
