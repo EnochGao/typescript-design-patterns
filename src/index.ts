@@ -29,9 +29,9 @@ class PatternShow {
         case 3: this.show(new FactoryMethodPattern()); break;
         case 4: this.show(new BuilderPattern()); break;
         case 5: this.show(new PrototypePattern()); break;
-        case 6: this.show(new AdapterPattern()); break;
-        case 7: this.show(new BridgePattern()); break;
-        case 24: this.show(new SimpleFactoryPattern()); break;
+        case 6: this.show(new SimpleFactoryPattern()); break;
+        case 7: this.show(new AdapterPattern()); break;
+        case 8: this.show(new BridgePattern()); break;
         default: break;
       }
       rl.close();
@@ -49,28 +49,28 @@ class PatternShow {
       2: Abstract factory \n
       3: Factory method \n
       4: Builder \n
-      5: Prototype \n\n
+      5: Prototype \n
+      6: SimpleFactory \n\n
       = 结构型 == \n
-      6: Adapter \n
-      7: Bridge \n
-      8: Composite \n
-      9: Decorator \n
-      10: Facade \n
-      11: Flyweight \n
-      12: Proxy \n\n
+      7: Adapter \n
+      8: Bridge \n
+      9: Composite \n
+      10: Decorator \n
+      11: Facade \n
+      12: Flyweight \n
+      13: Proxy \n\n
       = 行为型 == \n
-      13: Chain of responsibility \n
-      14: Command \n
-      15: Interpreter \n
-      16: Iterator \n
-      17: Mediator \n
-      18: Memento \n
-      19: Observer \n
-      20: State \n
-      21: Strategy \n
-      22: Template method \n
-      23: Visitor \n
-      24: SimpleFactory \n
+      14: Chain of responsibility \n
+      15: Command \n
+      16: Interpreter \n
+      17: Iterator \n
+      18: Mediator \n
+      19: Memento \n
+      20: Observer \n
+      21: State \n
+      22: Strategy \n
+      23: Template method \n
+      24: Visitor \n
     `;
 
     console.log("==== 选择一个demo实例运行 ====");

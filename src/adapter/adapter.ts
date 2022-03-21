@@ -15,12 +15,13 @@ export class Adaptee {
   };
 }
 
+// 类适配器
 export class ClassAdapter extends Adaptee implements Target {
   request(): void {
     this.specificRequest();
   }
 }
-
+// 对象适配器
 export class ObjectAdapter implements Target {
   constructor(private adaptee: Adaptee) {
   }
