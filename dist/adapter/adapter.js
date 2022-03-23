@@ -32,6 +32,7 @@ var Adaptee = /** @class */ (function () {
     return Adaptee;
 }());
 exports.Adaptee = Adaptee;
+// 类适配器
 var ClassAdapter = /** @class */ (function (_super) {
     __extends(ClassAdapter, _super);
     function ClassAdapter() {
@@ -43,6 +44,7 @@ var ClassAdapter = /** @class */ (function (_super) {
     return ClassAdapter;
 }(Adaptee));
 exports.ClassAdapter = ClassAdapter;
+// 对象适配器
 var ObjectAdapter = /** @class */ (function () {
     function ObjectAdapter(adaptee) {
         this.adaptee = adaptee;

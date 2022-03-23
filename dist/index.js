@@ -5,6 +5,7 @@ var index_1 = require("./abstract-factory/index");
 var index_2 = require("./adapter/index");
 var index_3 = require("./bridge/index");
 var index_4 = require("./builder/index");
+var composite_1 = require("./composite");
 var index_5 = require("./factory_method/index");
 var index_6 = require("./prototype/index");
 var index_7 = require("./simple_factory/index");
@@ -12,12 +13,6 @@ var index_8 = require("./singleton/index");
 var PatternShow = /** @class */ (function () {
     function PatternShow() {
     }
-    PatternShow.prototype.printMenu = function () {
-        var menu = "\n      = \u521B\u5EFA\u578B == \n\n      1: Singleton \n\n      2: Abstract factory \n\n      3: Factory method \n\n      4: Builder \n\n      5: Prototype \n\n\n      = \u7ED3\u6784\u578B == \n\n      6: Adapter \n\n      7: Bridge \n\n      8: Composite \n\n      9: Decorator \n\n      10: Facade \n\n      11: Flyweight \n\n      12: Proxy \n\n\n      = \u884C\u4E3A\u578B == \n\n      13: Chain of responsibility \n\n      14: Command \n\n      15: Interpreter \n\n      16: Iterator \n\n      17: Mediator \n\n      18: Memento \n\n      19: Observer \n\n      20: State \n\n      21: Strategy \n\n      22: Template method \n\n      23: Visitor \n\n      24: SimpleFactory \n\n    ";
-        console.log("==== 选择一个demo实例运行 ====");
-        console.log("\n");
-        console.log(menu);
-    };
     PatternShow.prototype.start = function () {
         var _this = this;
         var rl = readline.createInterface({
@@ -43,21 +38,30 @@ var PatternShow = /** @class */ (function () {
                     _this.show(new index_6.PrototypePattern());
                     break;
                 case 6:
-                    _this.show(new index_2.AdapterPattern());
+                    _this.show(new index_7.SimpleFactoryPattern());
                     break;
                 case 7:
+                    _this.show(new index_2.AdapterPattern());
+                    break;
+                case 8:
                     _this.show(new index_3.BridgePattern());
                     break;
-                case 24:
-                    _this.show(new index_7.SimpleFactoryPattern());
+                case 9:
+                    _this.show(new composite_1.CompositePattern());
                     break;
                 default: break;
             }
-            // rl.close();
+            rl.close();
         });
     };
     PatternShow.prototype.show = function (pattern) {
         pattern.show();
+    };
+    PatternShow.prototype.printMenu = function () {
+        var menu = "\n      = \u521B\u5EFA\u578B == \n\n      1: Singleton \n\n      2: Abstract factory \n\n      3: Factory method \n\n      4: Builder \n\n      5: Prototype \n\n      6: SimpleFactory \n\n\n      = \u7ED3\u6784\u578B == \n\n      7: Adapter \n\n      8: Bridge \n\n      9: Composite \n\n      10: Decorator \n\n      11: Facade \n\n      12: Flyweight \n\n      13: Proxy \n\n\n      = \u884C\u4E3A\u578B == \n\n      14: Chain of responsibility \n\n      15: Command \n\n      16: Interpreter \n\n      17: Iterator \n\n      18: Mediator \n\n      19: Memento \n\n      20: Observer \n\n      21: State \n\n      22: Strategy \n\n      23: Template method \n\n      24: Visitor \n\n    ";
+        console.log("==== 选择一个demo实例运行 ====");
+        console.log("\n");
+        console.log(menu);
     };
     return PatternShow;
 }());

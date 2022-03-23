@@ -3,6 +3,7 @@ import { AbstractFactoryPattern } from './abstract-factory/index';
 import { AdapterPattern } from './adapter/index';
 import { BridgePattern } from './bridge/index';
 import { BuilderPattern } from './builder/index';
+import { CompositePattern } from './composite';
 import { FactoryMethodPattern } from './factory_method/index';
 import { PrototypePattern } from './prototype/index';
 import { SimpleFactoryPattern } from './simple_factory/index';
@@ -23,6 +24,7 @@ class PatternShow {
     this.printMenu();
 
     rl.question("请选择：", (answer: string) => {
+
       switch (+answer) {
         case 1: this.show(new SingletonPattern()); break;
         case 2: this.show(new AbstractFactoryPattern()); break;
@@ -32,6 +34,7 @@ class PatternShow {
         case 6: this.show(new SimpleFactoryPattern()); break;
         case 7: this.show(new AdapterPattern()); break;
         case 8: this.show(new BridgePattern()); break;
+        case 9: this.show(new CompositePattern()); break;
         default: break;
       }
       rl.close();
