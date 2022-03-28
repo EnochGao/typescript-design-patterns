@@ -6,6 +6,7 @@ var index_2 = require("./adapter/index");
 var index_3 = require("./bridge/index");
 var index_4 = require("./builder/index");
 var composite_1 = require("./composite");
+var decorator_1 = require("./decorator");
 var index_5 = require("./factory_method/index");
 var index_6 = require("./prototype/index");
 var index_7 = require("./simple_factory/index");
@@ -48,6 +49,9 @@ var PatternShow = /** @class */ (function () {
                     break;
                 case 9:
                     _this.show(new composite_1.CompositePattern());
+                    break;
+                case 10:
+                    _this.show(new decorator_1.DecoratorPattern());
                     break;
                 default: break;
             }

@@ -6,7 +6,6 @@ var CompositePattern = /** @class */ (function () {
     function CompositePattern() {
     }
     CompositePattern.prototype.show = function () {
-        console.log('1111111111111');
         var composite = new composite_1.Composite();
         var composite2 = new composite_1.Composite();
         var leaf = new composite_1.Leaf('leaf1');
@@ -17,7 +16,6 @@ var CompositePattern = /** @class */ (function () {
         composite.add(leaf2);
         composite.add(leaf3);
         composite.operation();
-        console.log('22222222222');
     };
     return CompositePattern;
 }());
