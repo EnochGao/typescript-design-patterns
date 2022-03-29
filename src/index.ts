@@ -9,6 +9,7 @@ import { FacadePattern } from './facade';
 import { FactoryMethodPattern } from './factory_method/index';
 import { FlyweightPattern } from './flyweight';
 import { PrototypePattern } from './prototype/index';
+import { ProxyPattern } from './proxy';
 import { SimpleFactoryPattern } from './simple_factory/index';
 import { SingletonPattern } from './singleton/index';
 
@@ -41,6 +42,7 @@ class PatternShow {
         case 10: this.show(new DecoratorPattern()); break;
         case 11: this.show(new FacadePattern()); break;
         case 12: this.show(new FlyweightPattern()); break;
+        case 13: this.show(new ProxyPattern()); break;
         default: break;
       }
       rl.close();
