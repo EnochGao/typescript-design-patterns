@@ -1,7 +1,8 @@
 import { Pattern } from "../index";
 import { ConcreteFactory, Factory, Product } from "./factory-method";
-
-export class FactoryMethodPattern implements Pattern {
+/**
+ * 工厂方法
+ */export class FactoryMethodPattern implements Pattern {
 
   show() {
     const factory: Factory = new ConcreteFactory();

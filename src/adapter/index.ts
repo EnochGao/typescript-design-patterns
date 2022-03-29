@@ -1,6 +1,8 @@
 import { Pattern } from "../index";
 import { Adaptee, ClassAdapter, ObjectAdapter, Target } from "./adapter";
-
+/**
+ * 适配器模式
+ */
 export class AdapterPattern implements Pattern {
 
   show() {

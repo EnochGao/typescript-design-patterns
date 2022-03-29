@@ -1,7 +1,9 @@
 import { Pattern } from "../index";
 import { FlyweightFactory, UnSharableFlyweight } from "./flyweight";
 
-
+/**
+ * 享元模式
+ */
 export class FlyweightPattern implements Pattern {
 
   show() {

@@ -1,6 +1,8 @@
 import { Pattern } from "../index";
 import { Builder, ConcreteBuilder, Director } from "./builder";
-
+/**
+ * 建造者模式
+ */
 export class BuilderPattern implements Pattern {
 
   show() {

@@ -36,6 +36,7 @@ class PatternShow {
         case 4: this.show(new BuilderPattern()); break;
         case 5: this.show(new PrototypePattern()); break;
         case 6: this.show(new SimpleFactoryPattern()); break;
+
         case 7: this.show(new AdapterPattern()); break;
         case 8: this.show(new BridgePattern()); break;
         case 9: this.show(new CompositePattern()); break;
@@ -43,6 +44,8 @@ class PatternShow {
         case 11: this.show(new FacadePattern()); break;
         case 12: this.show(new FlyweightPattern()); break;
         case 13: this.show(new ProxyPattern()); break;
+
+
         default: break;
       }
       rl.close();

@@ -1,7 +1,9 @@
 import { Pattern } from "../index";
 import { Composite, Leaf } from "./composite";
 
-
+/**
+ * 组合模式
+ */
 export class CompositePattern implements Pattern {
   show() {
 
