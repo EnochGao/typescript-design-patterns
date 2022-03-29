@@ -5,6 +5,7 @@ import { BridgePattern } from './bridge/index';
 import { BuilderPattern } from './builder/index';
 import { CompositePattern } from './composite';
 import { DecoratorPattern } from './decorator';
+import { FacadePattern } from './facade';
 import { FactoryMethodPattern } from './factory_method/index';
 import { PrototypePattern } from './prototype/index';
 import { SimpleFactoryPattern } from './simple_factory/index';
@@ -37,6 +38,7 @@ class PatternShow {
         case 8: this.show(new BridgePattern()); break;
         case 9: this.show(new CompositePattern()); break;
         case 10: this.show(new DecoratorPattern()); break;
+        case 11: this.show(new FacadePattern()); break;
         default: break;
       }
       rl.close();
