@@ -43,7 +43,7 @@ var ConcreteDecorator = /** @class */ (function (_super) {
         return _super.call(this, component) || this;
     }
     ConcreteDecorator.prototype.operation = function () {
-        // super.operation();
+        _super.prototype.operation.call(this);
         this.addedFunction();
     };
     ConcreteDecorator.prototype.addedFunction = function () {

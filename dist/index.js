@@ -7,7 +7,9 @@ var index_3 = require("./bridge/index");
 var index_4 = require("./builder/index");
 var composite_1 = require("./composite");
 var decorator_1 = require("./decorator");
+var facade_1 = require("./facade");
 var index_5 = require("./factory_method/index");
+var flyweight_1 = require("./flyweight");
 var index_6 = require("./prototype/index");
 var index_7 = require("./simple_factory/index");
 var index_8 = require("./singleton/index");
@@ -52,6 +54,12 @@ var PatternShow = /** @class */ (function () {
                     break;
                 case 10:
                     _this.show(new decorator_1.DecoratorPattern());
+                    break;
+                case 11:
+                    _this.show(new facade_1.FacadePattern());
+                    break;
+                case 12:
+                    _this.show(new flyweight_1.FlyweightPattern());
                     break;
                 default: break;
             }

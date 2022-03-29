@@ -7,6 +7,7 @@ import { CompositePattern } from './composite';
 import { DecoratorPattern } from './decorator';
 import { FacadePattern } from './facade';
 import { FactoryMethodPattern } from './factory_method/index';
+import { FlyweightPattern } from './flyweight';
 import { PrototypePattern } from './prototype/index';
 import { SimpleFactoryPattern } from './simple_factory/index';
 import { SingletonPattern } from './singleton/index';
@@ -39,6 +40,7 @@ class PatternShow {
         case 9: this.show(new CompositePattern()); break;
         case 10: this.show(new DecoratorPattern()); break;
         case 11: this.show(new FacadePattern()); break;
+        case 12: this.show(new FlyweightPattern()); break;
         default: break;
       }
       rl.close();
