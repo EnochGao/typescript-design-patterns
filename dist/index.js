@@ -5,12 +5,14 @@ var index_1 = require("./abstract-factory/index");
 var index_2 = require("./adapter/index");
 var index_3 = require("./bridge/index");
 var index_4 = require("./builder/index");
+var chain_of_responsibility_1 = require("./chain of responsibility");
 var composite_1 = require("./composite");
 var decorator_1 = require("./decorator");
 var facade_1 = require("./facade");
 var index_5 = require("./factory_method/index");
 var flyweight_1 = require("./flyweight");
 var index_6 = require("./prototype/index");
+var proxy_1 = require("./proxy");
 var index_7 = require("./simple_factory/index");
 var index_8 = require("./singleton/index");
 var PatternShow = /** @class */ (function () {
@@ -60,6 +62,12 @@ var PatternShow = /** @class */ (function () {
                     break;
                 case 12:
                     _this.show(new flyweight_1.FlyweightPattern());
+                    break;
+                case 13:
+                    _this.show(new proxy_1.ProxyPattern());
+                    break;
+                case 14:
+                    _this.show(new chain_of_responsibility_1.ChainOfResponsibilityPattern());
                     break;
                 default: break;
             }

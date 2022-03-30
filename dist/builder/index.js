@@ -2,6 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BuilderPattern = void 0;
 var builder_1 = require("./builder");
+/**
+ * 建造者模式
+ */
 var BuilderPattern = /** @class */ (function () {
     function BuilderPattern() {
     }

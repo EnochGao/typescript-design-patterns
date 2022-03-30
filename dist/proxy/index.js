@@ -2,6 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProxyPattern = void 0;
 var proxy_1 = require("./proxy");
+/**
+ * 代理模式
+ */
 var ProxyPattern = /** @class */ (function () {
     function ProxyPattern() {
     }

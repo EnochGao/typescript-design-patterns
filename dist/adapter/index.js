@@ -2,6 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AdapterPattern = void 0;
 var adapter_1 = require("./adapter");
+/**
+ * 适配器模式
+ */
 var AdapterPattern = /** @class */ (function () {
     function AdapterPattern() {
     }

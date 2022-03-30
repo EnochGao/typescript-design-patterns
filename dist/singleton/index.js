@@ -2,6 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SingletonPattern = void 0;
 var singleton_1 = require("./singleton");
+/**
+ * @description 单例模式
+ */
 var SingletonPattern = /** @class */ (function () {
     function SingletonPattern() {
     }

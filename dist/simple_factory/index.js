@@ -2,6 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SimpleFactoryPattern = void 0;
 var simple_factory_1 = require("./simple-factory");
+/**
+ * 简单工厂
+ */
 var SimpleFactoryPattern = /** @class */ (function () {
     function SimpleFactoryPattern() {
     }

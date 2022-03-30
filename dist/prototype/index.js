@@ -2,6 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PrototypePattern = void 0;
 var prototype_1 = require("./prototype");
+/**
+ * 原型模式
+ */
 var PrototypePattern = /** @class */ (function () {
     function PrototypePattern() {
     }

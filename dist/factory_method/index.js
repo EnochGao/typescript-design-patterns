@@ -2,7 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FactoryMethodPattern = void 0;
 var factory_method_1 = require("./factory-method");
-var FactoryMethodPattern = /** @class */ (function () {
+/**
+ * 工厂方法
+ */ var FactoryMethodPattern = /** @class */ (function () {
     function FactoryMethodPattern() {
     }
     FactoryMethodPattern.prototype.show = function () {

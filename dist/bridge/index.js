@@ -2,6 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BridgePattern = void 0;
 var bridge_1 = require("./bridge");
+/**
+ * 桥接模式
+ */
 var BridgePattern = /** @class */ (function () {
     function BridgePattern() {
     }

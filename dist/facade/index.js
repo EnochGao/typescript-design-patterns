@@ -2,6 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FacadePattern = void 0;
 var facade_1 = require("./facade");
+/**
+ * 外观模式
+ */
 var FacadePattern = /** @class */ (function () {
     function FacadePattern() {
     }

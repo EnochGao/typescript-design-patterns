@@ -2,6 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FlyweightPattern = void 0;
 var flyweight_1 = require("./flyweight");
+/**
+ * 享元模式
+ */
 var FlyweightPattern = /** @class */ (function () {
     function FlyweightPattern() {
     }

@@ -2,6 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CompositePattern = void 0;
 var composite_1 = require("./composite");
+/**
+ * 组合模式
+ */
 var CompositePattern = /** @class */ (function () {
     function CompositePattern() {
     }
