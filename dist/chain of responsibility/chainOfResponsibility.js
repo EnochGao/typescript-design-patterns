@@ -43,7 +43,7 @@ var ConcreteHandle1 = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     ConcreteHandle1.prototype.handleRequest = function () {
-        console.log('具体处理1');
+        console.log('步骤1');
         var nest = this.getNest();
         if (nest) {
             nest.handleRequest();
@@ -62,7 +62,7 @@ var ConcreteHandle2 = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     ConcreteHandle2.prototype.handleRequest = function () {
-        console.log('具体处理2');
+        console.log('步骤2');
         var nest = this.getNest();
         if (nest) {
             nest.handleRequest();

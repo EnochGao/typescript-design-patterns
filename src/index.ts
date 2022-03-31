@@ -4,6 +4,7 @@ import { AdapterPattern } from './adapter/index';
 import { BridgePattern } from './bridge/index';
 import { BuilderPattern } from './builder/index';
 import { ChainOfResponsibilityPattern } from './chain of responsibility';
+import { CommandPattern } from './command';
 import { CompositePattern } from './composite';
 import { DecoratorPattern } from './decorator';
 import { FacadePattern } from './facade';
@@ -47,6 +48,7 @@ class PatternShow {
         case 13: this.show(new ProxyPattern()); break;
 
         case 14: this.show(new ChainOfResponsibilityPattern()); break;
+        case 15: this.show(new CommandPattern()); break;
 
         default: break;
       }

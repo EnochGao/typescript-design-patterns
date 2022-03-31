@@ -6,6 +6,7 @@ var index_2 = require("./adapter/index");
 var index_3 = require("./bridge/index");
 var index_4 = require("./builder/index");
 var chain_of_responsibility_1 = require("./chain of responsibility");
+var command_1 = require("./command");
 var composite_1 = require("./composite");
 var decorator_1 = require("./decorator");
 var facade_1 = require("./facade");
@@ -68,6 +69,9 @@ var PatternShow = /** @class */ (function () {
                     break;
                 case 14:
                     _this.show(new chain_of_responsibility_1.ChainOfResponsibilityPattern());
+                    break;
+                case 15:
+                    _this.show(new command_1.CommandPattern());
                     break;
                 default: break;
             }
