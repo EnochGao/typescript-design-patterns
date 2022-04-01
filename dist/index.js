@@ -12,6 +12,7 @@ var decorator_1 = require("./decorator");
 var facade_1 = require("./facade");
 var index_5 = require("./factory_method/index");
 var flyweight_1 = require("./flyweight");
+var interpreter_1 = require("./interpreter");
 var index_6 = require("./prototype/index");
 var proxy_1 = require("./proxy");
 var index_7 = require("./simple_factory/index");
@@ -72,6 +73,9 @@ var PatternShow = /** @class */ (function () {
                     break;
                 case 15:
                     _this.show(new command_1.CommandPattern());
+                    break;
+                case 16:
+                    _this.show(new interpreter_1.InterpreterPattern());
                     break;
                 default: break;
             }

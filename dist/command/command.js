@@ -35,6 +35,7 @@ var Invoker = /** @class */ (function () {
         this.command = command;
     }
     Invoker.prototype.call = function () {
+        console.log("调用者执行命令");
         this.command.execute();
     };
     return Invoker;
