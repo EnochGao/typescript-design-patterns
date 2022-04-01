@@ -11,6 +11,7 @@ import { FacadePattern } from './facade';
 import { FactoryMethodPattern } from './factory_method/index';
 import { FlyweightPattern } from './flyweight';
 import { InterpreterPattern } from './interpreter';
+import { IteratorPattern } from './Iterator';
 import { PrototypePattern } from './prototype/index';
 import { ProxyPattern } from './proxy';
 import { SimpleFactoryPattern } from './simple_factory/index';
@@ -51,6 +52,7 @@ class PatternShow {
         case 14: this.show(new ChainOfResponsibilityPattern()); break;
         case 15: this.show(new CommandPattern()); break;
         case 16: this.show(new InterpreterPattern()); break;
+        case 17: this.show(new IteratorPattern()); break;
 
         default: break;
       }
