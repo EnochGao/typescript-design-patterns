@@ -1,22 +1,26 @@
 import * as readline from 'readline';
-import { AbstractFactoryPattern } from './abstract-factory/index';
-import { AdapterPattern } from './adapter/index';
-import { BridgePattern } from './bridge/index';
-import { BuilderPattern } from './builder/index';
-import { ChainOfResponsibilityPattern } from './chain of responsibility';
-import { CommandPattern } from './command';
-import { CompositePattern } from './composite';
-import { DecoratorPattern } from './decorator';
-import { FacadePattern } from './facade';
-import { FactoryMethodPattern } from './factory_method/index';
-import { FlyweightPattern } from './flyweight';
-import { InterpreterPattern } from './interpreter';
-import { IteratorPattern } from './Iterator';
-import { MediatorPattern } from './mediator';
-import { PrototypePattern } from './prototype/index';
-import { ProxyPattern } from './proxy';
+
 import { SimpleFactoryPattern } from './simple_factory/index';
-import { SingletonPattern } from './singleton/index';
+
+import { BuilderPattern } from './creational-pattern/builder/index';
+import { PrototypePattern } from './creational-pattern/prototype/index';
+import { SingletonPattern } from './creational-pattern/singleton/index';
+import { FactoryMethodPattern } from './creational-pattern/factory_method/index';
+import { AbstractFactoryPattern } from './creational-pattern/abstract-factory/index';
+
+import { AdapterPattern } from './structural-pattern/adapter/index';
+import { BridgePattern } from './structural-pattern/bridge/index';
+import { CompositePattern } from './structural-pattern/composite';
+import { DecoratorPattern } from './structural-pattern/decorator';
+import { FlyweightPattern } from './structural-pattern/flyweight';
+import { FacadePattern } from './structural-pattern/facade';
+import { ProxyPattern } from './structural-pattern/proxy';
+
+import { IteratorPattern } from './behavioral-pattern/Iterator';
+import { MediatorPattern } from './behavioral-pattern/mediator';
+import { CommandPattern } from './behavioral-pattern/command';
+import { InterpreterPattern } from './behavioral-pattern/interpreter';
+import { ChainOfResponsibilityPattern } from './behavioral-pattern/chain-of-responsibility';
 
 export interface Pattern {
   show(): void;
