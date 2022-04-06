@@ -1,24 +1,25 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var readline = require("readline");
-var index_1 = require("./abstract-factory/index");
-var index_2 = require("./adapter/index");
-var index_3 = require("./bridge/index");
-var index_4 = require("./builder/index");
-var chain_of_responsibility_1 = require("./chain of responsibility");
-var command_1 = require("./command");
-var composite_1 = require("./composite");
-var decorator_1 = require("./decorator");
-var facade_1 = require("./facade");
-var index_5 = require("./factory_method/index");
-var flyweight_1 = require("./flyweight");
-var interpreter_1 = require("./interpreter");
-var Iterator_1 = require("./Iterator");
-var mediator_1 = require("./mediator");
-var index_6 = require("./prototype/index");
-var proxy_1 = require("./proxy");
-var index_7 = require("./simple_factory/index");
-var index_8 = require("./singleton/index");
+var index_1 = require("./simple_factory/index");
+var index_2 = require("./creational-pattern/builder/index");
+var index_3 = require("./creational-pattern/prototype/index");
+var index_4 = require("./creational-pattern/singleton/index");
+var index_5 = require("./creational-pattern/factory_method/index");
+var index_6 = require("./creational-pattern/abstract-factory/index");
+var index_7 = require("./structural-pattern/adapter/index");
+var index_8 = require("./structural-pattern/bridge/index");
+var composite_1 = require("./structural-pattern/composite");
+var decorator_1 = require("./structural-pattern/decorator");
+var flyweight_1 = require("./structural-pattern/flyweight");
+var facade_1 = require("./structural-pattern/facade");
+var proxy_1 = require("./structural-pattern/proxy");
+var Iterator_1 = require("./behavioral-pattern/Iterator");
+var mediator_1 = require("./behavioral-pattern/mediator");
+var command_1 = require("./behavioral-pattern/command");
+var interpreter_1 = require("./behavioral-pattern/interpreter");
+var chain_of_responsibility_1 = require("./behavioral-pattern/chain-of-responsibility");
+var memento_1 = require("./behavioral-pattern/memento");
 var PatternShow = /** @class */ (function () {
     function PatternShow() {
     }
@@ -32,28 +33,28 @@ var PatternShow = /** @class */ (function () {
         rl.question("请选择：", function (answer) {
             switch (+answer) {
                 case 1:
-                    _this.show(new index_8.SingletonPattern());
+                    _this.show(new index_4.SingletonPattern());
                     break;
                 case 2:
-                    _this.show(new index_1.AbstractFactoryPattern());
+                    _this.show(new index_6.AbstractFactoryPattern());
                     break;
                 case 3:
                     _this.show(new index_5.FactoryMethodPattern());
                     break;
                 case 4:
-                    _this.show(new index_4.BuilderPattern());
+                    _this.show(new index_2.BuilderPattern());
                     break;
                 case 5:
-                    _this.show(new index_6.PrototypePattern());
+                    _this.show(new index_3.PrototypePattern());
                     break;
                 case 6:
-                    _this.show(new index_7.SimpleFactoryPattern());
+                    _this.show(new index_1.SimpleFactoryPattern());
                     break;
                 case 7:
-                    _this.show(new index_2.AdapterPattern());
+                    _this.show(new index_7.AdapterPattern());
                     break;
                 case 8:
-                    _this.show(new index_3.BridgePattern());
+                    _this.show(new index_8.BridgePattern());
                     break;
                 case 9:
                     _this.show(new composite_1.CompositePattern());
@@ -84,6 +85,9 @@ var PatternShow = /** @class */ (function () {
                     break;
                 case 18:
                     _this.show(new mediator_1.MediatorPattern());
+                    break;
+                case 19:
+                    _this.show(new memento_1.MementoPattern());
                     break;
                 default: break;
             }
