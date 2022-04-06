@@ -15,9 +15,10 @@ var MementoPattern = /** @class */ (function () {
         console.log('初始状态：', or.getState());
         var me = or.createMemento();
         cr.setMemento(me);
+        console.log('---设置新状态---');
         or.setState('状态111');
         console.log('当前状态：', or.getState());
-        console.log('状态恢复');
+        console.log('---状态恢复---');
         or.restoreMemento(cr.getMemento());
         console.log('当前状态：', or.getState());
     };

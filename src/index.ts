@@ -22,6 +22,7 @@ import { CommandPattern } from './behavioral-pattern/command';
 import { InterpreterPattern } from './behavioral-pattern/interpreter';
 import { ChainOfResponsibilityPattern } from './behavioral-pattern/chain-of-responsibility';
 import { MementoPattern } from './behavioral-pattern/memento';
+import { ObserverPattern } from './behavioral-pattern/observer';
 
 export interface Pattern {
   show(): void;
@@ -61,6 +62,7 @@ class PatternShow {
         case 17: this.show(new IteratorPattern()); break;
         case 18: this.show(new MediatorPattern()); break;
         case 19: this.show(new MementoPattern()); break;
+        case 20: this.show(new ObserverPattern()); break;
 
         default: break;
       }
