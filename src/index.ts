@@ -23,6 +23,7 @@ import { InterpreterPattern } from './behavioral-pattern/interpreter';
 import { ChainOfResponsibilityPattern } from './behavioral-pattern/chain-of-responsibility';
 import { MementoPattern } from './behavioral-pattern/memento';
 import { ObserverPattern } from './behavioral-pattern/observer';
+import { StatePattern } from './behavioral-pattern/state';
 
 export interface Pattern {
   show(): void;
@@ -63,6 +64,7 @@ class PatternShow {
         case 18: this.show(new MediatorPattern()); break;
         case 19: this.show(new MementoPattern()); break;
         case 20: this.show(new ObserverPattern()); break;
+        case 21: this.show(new StatePattern()); break;
 
         default: break;
       }

@@ -21,6 +21,7 @@ var interpreter_1 = require("./behavioral-pattern/interpreter");
 var chain_of_responsibility_1 = require("./behavioral-pattern/chain-of-responsibility");
 var memento_1 = require("./behavioral-pattern/memento");
 var observer_1 = require("./behavioral-pattern/observer");
+var state_1 = require("./behavioral-pattern/state");
 var PatternShow = /** @class */ (function () {
     function PatternShow() {
     }
@@ -92,6 +93,9 @@ var PatternShow = /** @class */ (function () {
                     break;
                 case 20:
                     _this.show(new observer_1.ObserverPattern());
+                    break;
+                case 21:
+                    _this.show(new state_1.StatePattern());
                     break;
                 default: break;
             }
