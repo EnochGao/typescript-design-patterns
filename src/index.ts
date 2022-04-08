@@ -24,6 +24,7 @@ import { ChainOfResponsibilityPattern } from './behavioral-pattern/chain-of-resp
 import { MementoPattern } from './behavioral-pattern/memento';
 import { ObserverPattern } from './behavioral-pattern/observer';
 import { StatePattern } from './behavioral-pattern/state';
+import { StrategyPattern } from './behavioral-pattern/strategy';
 
 export interface Pattern {
   show(): void;
@@ -65,6 +66,7 @@ class PatternShow {
         case 19: this.show(new MementoPattern()); break;
         case 20: this.show(new ObserverPattern()); break;
         case 21: this.show(new StatePattern()); break;
+        case 22: this.show(new StrategyPattern()); break;
 
         default: break;
       }
