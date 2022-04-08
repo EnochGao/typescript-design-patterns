@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var readline = require("readline");
-var index_1 = require("./simple_factory/index");
+var index_1 = require("./simple-factory/index");
 var index_2 = require("./creational-pattern/builder/index");
 var index_3 = require("./creational-pattern/prototype/index");
 var index_4 = require("./creational-pattern/singleton/index");
@@ -23,6 +23,7 @@ var memento_1 = require("./behavioral-pattern/memento");
 var observer_1 = require("./behavioral-pattern/observer");
 var state_1 = require("./behavioral-pattern/state");
 var strategy_1 = require("./behavioral-pattern/strategy");
+var template_method_1 = require("./behavioral-pattern/template-method");
 var PatternShow = /** @class */ (function () {
     function PatternShow() {
     }
@@ -100,6 +101,9 @@ var PatternShow = /** @class */ (function () {
                     break;
                 case 22:
                     _this.show(new strategy_1.StrategyPattern());
+                    break;
+                case 23:
+                    _this.show(new template_method_1.TemplateMethodPattern());
                     break;
                 default: break;
             }

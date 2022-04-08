@@ -1,6 +1,6 @@
 import * as readline from 'readline';
 
-import { SimpleFactoryPattern } from './simple_factory/index';
+import { SimpleFactoryPattern } from './simple-factory/index';
 
 import { BuilderPattern } from './creational-pattern/builder/index';
 import { PrototypePattern } from './creational-pattern/prototype/index';
@@ -25,6 +25,7 @@ import { MementoPattern } from './behavioral-pattern/memento';
 import { ObserverPattern } from './behavioral-pattern/observer';
 import { StatePattern } from './behavioral-pattern/state';
 import { StrategyPattern } from './behavioral-pattern/strategy';
+import { TemplateMethodPattern } from './behavioral-pattern/template-method';
 
 export interface Pattern {
   show(): void;
@@ -67,6 +68,7 @@ class PatternShow {
         case 20: this.show(new ObserverPattern()); break;
         case 21: this.show(new StatePattern()); break;
         case 22: this.show(new StrategyPattern()); break;
+        case 23: this.show(new TemplateMethodPattern()); break;
 
         default: break;
       }
