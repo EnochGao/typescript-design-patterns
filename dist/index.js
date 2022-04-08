@@ -24,6 +24,7 @@ var observer_1 = require("./behavioral-pattern/observer");
 var state_1 = require("./behavioral-pattern/state");
 var strategy_1 = require("./behavioral-pattern/strategy");
 var template_method_1 = require("./behavioral-pattern/template-method");
+var visitor_1 = require("./behavioral-pattern/visitor");
 var PatternShow = /** @class */ (function () {
     function PatternShow() {
     }
@@ -104,6 +105,9 @@ var PatternShow = /** @class */ (function () {
                     break;
                 case 23:
                     _this.show(new template_method_1.TemplateMethodPattern());
+                    break;
+                case 24:
+                    _this.show(new visitor_1.VisitorPattern());
                     break;
                 default: break;
             }

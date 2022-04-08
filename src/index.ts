@@ -26,6 +26,7 @@ import { ObserverPattern } from './behavioral-pattern/observer';
 import { StatePattern } from './behavioral-pattern/state';
 import { StrategyPattern } from './behavioral-pattern/strategy';
 import { TemplateMethodPattern } from './behavioral-pattern/template-method';
+import { VisitorPattern } from './behavioral-pattern/visitor';
 
 export interface Pattern {
   show(): void;
@@ -69,6 +70,7 @@ class PatternShow {
         case 21: this.show(new StatePattern()); break;
         case 22: this.show(new StrategyPattern()); break;
         case 23: this.show(new TemplateMethodPattern()); break;
+        case 24: this.show(new VisitorPattern()); break;
 
         default: break;
       }
