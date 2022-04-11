@@ -1,0 +1,21 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLInterface</id><coordinates><x>150</x><y>110</y><w>80</w><h>90</h></coordinates><panel_attributes>IProduct
+--
+use():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>360</y><w>200</w><h>80</h></coordinates><panel_attributes>ConcreteProductA
+-
+
+-
+use():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>360</y><w>200</w><h>80</h></coordinates><panel_attributes>ConcreteProductB
+-
+
+-
+use():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>190</y><w>120</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;100;170</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>190</y><w>90</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>70;10;10;170</additional_attributes></element><element><id>UMLInterface</id><coordinates><x>570</x><y>110</y><w>160</w><h>90</h></coordinates><panel_attributes>IFactory
+--
+createProduct():IProduct</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>360</y><w>200</w><h>80</h></coordinates><panel_attributes>ConcreteFactoryA
+-
+
+-
+createProduct():IProduct</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>190</y><w>160</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>140;10;10;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>360</y><w>200</w><h>80</h></coordinates><panel_attributes>ConcreteFactoryB
+-
+
+-
+createProduct():IProduct</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>190</y><w>150</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;130;170</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>430</y><w>500</w><h>180</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>480;10;480;160;10;160;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>430</y><w>500</w><h>250</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>480;10;480;230;10;230;10;10</additional_attributes></element></diagram>

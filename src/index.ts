@@ -1,11 +1,11 @@
 import * as readline from 'readline';
 
-import { SimpleFactoryPattern } from './simple-factory/index';
+import { SimpleFactoryPattern } from './creational-pattern/simple-factory/index';
 
 import { BuilderPattern } from './creational-pattern/builder/index';
 import { PrototypePattern } from './creational-pattern/prototype/index';
 import { SingletonPattern } from './creational-pattern/singleton/index';
-import { FactoryMethodPattern } from './creational-pattern/factory_method/index';
+import { FactoryMethodPattern } from './creational-pattern/factory-method/index';
 import { AbstractFactoryPattern } from './creational-pattern/abstract-factory/index';
 
 import { AdapterPattern } from './structural-pattern/adapter/index';

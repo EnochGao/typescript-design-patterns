@@ -6,22 +6,21 @@
    ConcreteFactory：具体工厂
  */
 
-export interface Product {
+export interface IProduct {
   use(): void;
 }
-export interface Factory {
-  factoryMethod(): Product;
+export interface IFactory {
+  createProduct(): IProduct;
 }
 
-class ConcreteProduct implements Product {
-
+class ConcreteProduct implements IProduct {
   use(): void {
     console.log('product is used！');
   }
-
 }
-export class ConcreteFactory implements Factory {
-  factoryMethod(): Product {
+
+export class ConcreteFactory implements IFactory {
+  createProduct(): IProduct {
     return new ConcreteProduct();
   }
 }

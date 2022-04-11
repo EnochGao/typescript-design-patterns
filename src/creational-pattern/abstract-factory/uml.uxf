@@ -1,0 +1,27 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLInterface</id><coordinates><x>97</x><y>120</y><w>80</w><h>90</h></coordinates><panel_attributes>IProductA
+--
+use():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>47</x><y>370</y><w>200</w><h>80</h></coordinates><panel_attributes>ProductA
+-
+
+-
+use():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>277</x><y>370</y><w>200</w><h>80</h></coordinates><panel_attributes>ProductB
+-
+
+-
+eat():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>127</x><y>200</y><w>30</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>UMLInterface</id><coordinates><x>587</x><y>120</y><w>180</w><h>120</h></coordinates><panel_attributes>IFactory
+--
+createProductA():IProductA
+createProductB():IProductB
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>527</x><y>370</y><w>200</w><h>80</h></coordinates><panel_attributes>ConcreteFactoryA
+-
+
+-
+createProductA():IProductA
+createProductB():IProductB</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>537</x><y>200</y><w>160</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>140;10;10;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>787</x><y>370</y><w>200</w><h>80</h></coordinates><panel_attributes>ConcreteFactoryB
+-
+
+-
+createProductA():IProductA
+createProductB():IProductB</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>677</x><y>200</y><w>150</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;130;170</additional_attributes></element><element><id>UMLInterface</id><coordinates><x>307</x><y>120</y><w>80</w><h>90</h></coordinates><panel_attributes>IProductB
+--
+eate():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>337</x><y>200</y><w>30</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>440</y><w>340</w><h>120</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;20;10;100;320;100;320;10</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>440</y><w>700</w><h>140</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;10;120;680;120;680;10</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>440</y><w>570</w><h>190</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;20;10;170;550;170;550;10</additional_attributes></element><element><id>Relation</id><coordinates><x>60</x><y>440</y><w>530</w><h>170</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;10;150;510;150;510;10</additional_attributes></element></diagram>
