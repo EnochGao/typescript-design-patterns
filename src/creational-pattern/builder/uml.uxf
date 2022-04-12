@@ -1,0 +1,26 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLInterface</id><coordinates><x>130</x><y>110</y><w>160</w><h>120</h></coordinates><panel_attributes>IBuilder
+-
+  buildPartA(): void;
+  buildPartB(): void;
+  getProduct(): Product;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>360</y><w>200</w><h>100</h></coordinates><panel_attributes>ConcreteBuilderA
+-
+
+-
+  buildPartA(): void;
+  buildPartB(): void;
+  getProduct(): Product;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>360</y><w>200</w><h>100</h></coordinates><panel_attributes>ConcreteBuilderB
+-
+
+-
+  buildPartA(): void;
+  buildPartB(): void;
+  getProduct(): Product;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>220</y><w>110</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;90;140</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>220</y><w>100</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>80;10;10;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>100</y><w>200</w><h>80</h></coordinates><panel_attributes>Director
+-
+ builder: IBuilder;
+-
+getProduct():Product</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>370</y><w>200</w><h>80</h></coordinates><panel_attributes>Product
+-
+  A: string;
+  B: string;
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>130</y><w>210</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>190;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>220</y><w>390</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;370;150</additional_attributes></element></diagram>

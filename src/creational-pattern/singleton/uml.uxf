@@ -1,0 +1,7 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>&lt;diagram program="umletino" version="14.4.0-SNAPSHOT"&gt;&lt;zoom_level&gt;10&lt;/zoom_level&gt;&lt;element&gt;&lt;id&gt;UMLClass&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;130&lt;/x&gt;&lt;y&gt;260&lt;/y&gt;&lt;w&gt;200&lt;/w&gt;&lt;h&gt;80&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;ConcreteProductA
+-
+use():void&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;/diagram&gt;Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>360</x><y>270</y><w>200</w><h>80</h></coordinates><panel_attributes>Singleton
+-
+instance:Singleton
+-
+getInstance():Singleton</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>150</y><w>200</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>80;160;180;160;180;10;10;10;10;120</additional_attributes></element></diagram>

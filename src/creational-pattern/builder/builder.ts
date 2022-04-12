@@ -11,13 +11,13 @@ class Product {
   B: string;
 }
 
-export interface Builder {
+export interface IBuilder {
   buildPartA(): void;
   buildPartB(): void;
   getProduct(): Product;
 }
 
-export class ConcreteBuilder implements Builder {
+export class ConcreteBuilder implements IBuilder {
   product: Product;
   constructor() {
     this.product = new Product();
@@ -35,9 +35,9 @@ export class ConcreteBuilder implements Builder {
 }
 
 export class Director {
-  builder: Builder;
+  builder: IBuilder;
 
-  setBuilder(builder: Builder) {
+  setBuilder(builder: IBuilder) {
     this.builder = builder;
   }
 
