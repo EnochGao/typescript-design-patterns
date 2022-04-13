@@ -1,0 +1,11 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLInterface</id><coordinates><x>160</x><y>100</y><w>120</w><h>90</h></coordinates><panel_attributes>ITarget
+-
+  request(): void;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>340</y><w>200</w><h>100</h></coordinates><panel_attributes>Adapter
+-
+
+-
+  request(): void;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>170</y><w>30</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>120</y><w>200</w><h>80</h></coordinates><panel_attributes>Adaptee
+-
+
+-
+  specificRequest():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>190</y><w>170</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;150;150;10</additional_attributes></element></diagram>

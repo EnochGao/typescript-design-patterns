@@ -1,0 +1,15 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLInterface</id><coordinates><x>130</x><y>100</y><w>160</w><h>90</h></coordinates><panel_attributes>Implementor
+-
+  operationImpl(): void;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>340</y><w>200</w><h>100</h></coordinates><panel_attributes>ConcreteImplementorA
+-
+
+-
+  operationImpl(): void;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>170</y><w>30</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>180</y><w>200</w><h>80</h></coordinates><panel_attributes>/Abstraction/
+-
+implementor: Implementor
+-
+  operation():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>150</y><w>160</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>140;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>340</y><w>200</w><h>100</h></coordinates><panel_attributes>RefinedAbstraction
+-
+
+-
+  operation(): void;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>250</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element></diagram>

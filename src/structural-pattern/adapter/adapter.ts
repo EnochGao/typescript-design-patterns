@@ -5,7 +5,7 @@
    适配器（Adapter）类：它是一个转换器，通过继承或引用适配者的对象，把适配者接口转换成目标接口，让客户按目标接口的格式访问适配者。
 */
 
-export interface Target {
+export interface ITarget {
   request(): void;
 }
 
@@ -16,13 +16,13 @@ export class Adaptee {
 }
 
 // 类适配器
-export class ClassAdapter extends Adaptee implements Target {
+export class ClassAdapter extends Adaptee implements ITarget {
   request(): void {
     this.specificRequest();
   }
 }
 // 对象适配器
-export class ObjectAdapter implements Target {
+export class ObjectAdapter implements ITarget {
   constructor(private adaptee: Adaptee) {
   }
   request(): void {
