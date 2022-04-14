@@ -12,7 +12,7 @@ export interface IComponent {
 }
 
 // 抽象装饰角色
-export abstract class IDecorator implements IComponent {
+export class Decorator implements IComponent {
   private component: IComponent;
 
   constructor(component: IComponent) {
@@ -25,7 +25,7 @@ export abstract class IDecorator implements IComponent {
 }
 
 //具体装饰角色
-export class ConcreteDecorator extends IDecorator {
+export class ConcreteDecorator extends Decorator {
 
   constructor(component: IComponent) {
     super(component);

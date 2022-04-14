@@ -1,0 +1,17 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLInterface</id><coordinates><x>260</x><y>80</y><w>120</w><h>90</h></coordinates><panel_attributes>IComponent
+-
+  operation(): void;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>340</y><w>200</w><h>100</h></coordinates><panel_attributes>ConcreteComponent
+-
+
+-
+operation(): void;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>160</y><w>120</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>100;10;10;180</additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>340</y><w>200</w><h>100</h></coordinates><panel_attributes>Decorator
+-
+component: IComponent
+-
+  operation(): void;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>160</y><w>100</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;180</additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>590</y><w>200</w><h>100</h></coordinates><panel_attributes>ConcreteDecorator
+-
+
+-
+operation(): void;
+addedFunction():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>430</y><w>30</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element></diagram>

@@ -6,10 +6,12 @@
 具体实现化（Concrete Implementor）角色：给出实现化角色接口的具体实现。
 */
 
+// 实现化（Implementor）角色
 export interface Implementor {
   operationImpl(): void;
 }
 
+// 抽象化（Abstraction）角色
 export abstract class Abstraction {
   constructor(protected implementor: Implementor) {
   }

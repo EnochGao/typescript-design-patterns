@@ -1,5 +1,5 @@
 import { Pattern } from "../../index";
-import { ConcreteComponent, ConcreteDecorator, IComponent, IDecorator } from "./decorator";
+import { ConcreteComponent, ConcreteDecorator, IComponent, } from "./decorator";
 
 /**
  * 装饰器模式
