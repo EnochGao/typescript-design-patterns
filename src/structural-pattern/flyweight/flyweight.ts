@@ -12,7 +12,6 @@
 
 // 非享元抽象角色
 interface IUnSharableFlyweight {
-  // new(key: string): any;
   getInfo(): string;
 }
 
@@ -34,14 +33,11 @@ export class ConcreteFlyweight implements IFlyweight {
 
 // 非享元角色
 export class UnSharableFlyweight implements IUnSharableFlyweight {
-
   constructor(private info: string) {
   }
-
   getInfo() {
     return this.info;
   }
-
 }
 
 // 享元工厂（Flyweight Factory）角色
@@ -49,14 +45,10 @@ export class FlyweightFactory {
   flyweights: Map<string, IFlyweight> = new Map();
 
   getFlyWeight(key: string): IFlyweight {
-
     const fw = this.flyweights.has(key);
     if (!fw) {
       this.flyweights.set(key, new ConcreteFlyweight(key));
     }
-
     return this.flyweights.get(key);
-
   }
-
 }

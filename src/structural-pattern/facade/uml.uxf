@@ -1,0 +1,16 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>280</x><y>180</y><w>200</w><h>100</h></coordinates><panel_attributes>Facade
+-
+- sa:SubSystemA
+- sb:SubSystemB
+-
+  wrapOperation(): void;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>390</y><w>200</w><h>100</h></coordinates><panel_attributes>SubSystemA
+-
+
+-
+operation(): void;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>390</y><w>200</w><h>100</h></coordinates><panel_attributes>SubSystemB
+-
+
+-
+operation(): void;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>270</y><w>120</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>100;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>270</y><w>120</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;120</additional_attributes></element></diagram>
