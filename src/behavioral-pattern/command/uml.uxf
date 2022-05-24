@@ -1,0 +1,15 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>300</x><y>640</y><w>200</w><h>100</h></coordinates><panel_attributes>Receiver
+-
+
+-
+action(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>340</x><y>200</y><w>100</w><h>90</h></coordinates><panel_attributes>ICommand
+--
+execute(): void;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>460</y><w>200</w><h>100</h></coordinates><panel_attributes>ConcreteCommand
+-
+- receiver: Receiver
+-
+execute(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>260</y><w>30</w><h>220</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;200</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>550</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>230</y><w>200</w><h>100</h></coordinates><panel_attributes>Invoker
+-
+- command: ICommand
+-
+call(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>250</y><w>270</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>250;10;10;10</additional_attributes></element></diagram>
