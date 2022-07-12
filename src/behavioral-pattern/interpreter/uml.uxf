@@ -1,0 +1,20 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>530</x><y>350</y><w>200</w><h>100</h></coordinates><panel_attributes>AndExpression
+-
+- city: AbstractExpression,
+- person: AbstractExpression
+-
+ + interpret(info: string): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>350</y><w>200</w><h>100</h></coordinates><panel_attributes>TerminalExpression
+-
+ - set:Set&lt;string&gt;
+-
++  interpret(info: string): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>150</y><w>100</w><h>220</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>80;10;10;200</additional_attributes></element><element><id>UMLInterface</id><coordinates><x>340</x><y>70</y><w>200</w><h>90</h></coordinates><panel_attributes>AbstractExpression
+--
+ + interpret(info: string): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>150</y><w>140</w><h>220</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;120;200</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>130</y><w>150</w><h>240</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>130;220;130;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>50</y><w>210</w><h>190</h></coordinates><panel_attributes>Context
+--
+-cityPerson: AbstractExpression
+
+--
+
++ freeRide(info: string)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>130</y><w>190</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;170;10</additional_attributes></element></diagram>
