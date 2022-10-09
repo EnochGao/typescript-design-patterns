@@ -1,12 +1,10 @@
-import { Pattern } from "../../index";
-import { Caretaker, Originator } from "./memento";
-
+import { Pattern } from '../../index';
+import { Caretaker, Originator } from './memento';
 
 /**
  * 备忘录模式
  */
 export class MementoPattern implements Pattern {
-
   show() {
     const or = new Originator();
     const cr = new Caretaker();
@@ -27,7 +25,5 @@ export class MementoPattern implements Pattern {
     or.restoreMemento(cr.getMemento());
 
     console.log('当前状态：', or.getState());
-
   }
-
 }
