@@ -6,38 +6,34 @@
  * - 2.具体策略（Concrete Strategy）类：实现了抽象策略定义的接口，提供具体的算法实现。
  * - 3.环境（Context）类：持有一个策略类的引用，最终给客户端调用。
  *
-*/
+ */
 
-
-// 抽象策略（Strategy）类
+/** 抽象策略（Strategy）类 */
 export interface IStrategy {
   strategyMethod(): void;
 }
 
-// 具体策略类
+/** 具体策略类 */
 export class ConcreteStrategyA implements IStrategy {
   strategyMethod(): void {
     console.log('具体策略A的策略方法被访问！');
-
   }
-
 }
-// 具体策略类
+/** 具体策略类 */
 export class ConcreteStrategyB implements IStrategy {
   strategyMethod(): void {
     console.log('具体策略B的策略方法被访问！');
   }
-
 }
 
-// 环境（Context）类
+/** 环境（Context）类 */
 export class Context {
-
   private strategy: IStrategy;
 
   setStrategy(s: IStrategy) {
     this.strategy = s;
   }
+
   getStrategy() {
     return this.strategy;
   }
@@ -45,6 +41,4 @@ export class Context {
   strategyMethod(): void {
     this.strategy.strategyMethod();
   }
-
-
 }
