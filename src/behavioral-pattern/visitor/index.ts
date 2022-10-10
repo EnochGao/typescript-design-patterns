@@ -1,12 +1,16 @@
-import { Pattern } from "src";
-import { ConcreteElementA, ConcreteElementB, ConcreteVisitorA, ConcreteVisitorB, ObjectStructure } from "./visitor";
-
+import { Pattern } from 'src';
+import {
+  ConcreteElementA,
+  ConcreteElementB,
+  ConcreteVisitorA,
+  ConcreteVisitorB,
+  ObjectStructure,
+} from './visitor';
 
 /**
  * 访问者模式
  */
 export class VisitorPattern implements Pattern {
-
   show() {
     const os = new ObjectStructure();
 
@@ -23,7 +27,5 @@ export class VisitorPattern implements Pattern {
 
     const vB = new ConcreteVisitorB();
     os.accept(vB);
-
   }
-
 }

@@ -9,17 +9,15 @@
  * 另外具体元素中可能还包含本身业务逻辑的相关操作。。
  * - 5.对象结构（Object Structure）角色：是一个包含元素角色的容器，提供让访问者对象遍历容器中的所有元素的方法，通常由 List、Set、Map 等聚合类实现。
  *
-*/
+ */
 
-
-// 抽象访问者（Visitor）角色
+/** 抽象访问者（Visitor）角色 */
 export interface IVisitor {
   visit(element: ConcreteElementA): void;
   visit(element: ConcreteElementB): void;
 }
 
-
-// 具体访问者（ConcreteVisitor）角色
+/** 具体访问者（ConcreteVisitor）角色 */
 export class ConcreteVisitorA implements IVisitor {
   visit(element: ConcreteElementA): void;
   visit(element: ConcreteElementB): void;
@@ -30,9 +28,8 @@ export class ConcreteVisitorA implements IVisitor {
       console.log('具体访问者A访问-->', element.operationB());
     }
   }
-
 }
-// 具体访问者（ConcreteVisitor）角色
+/** 具体访问者（ConcreteVisitor）角色 */
 export class ConcreteVisitorB implements IVisitor {
   visit(element: ConcreteElementA): void;
   visit(element: ConcreteElementB): void;
@@ -45,12 +42,12 @@ export class ConcreteVisitorB implements IVisitor {
   }
 }
 
-// 抽象访问者（Visitor）角色
+/** 抽象访问者（Visitor）角色*/
 export interface IElement {
   accept(visitor: IVisitor): void;
 }
 
-// 具体元素（ConcreteElement）角色
+/** 具体元素（ConcreteElement）角色*/
 export class ConcreteElementA implements IElement {
   accept(visitor: IVisitor): void {
     visitor.visit(this);
@@ -60,7 +57,7 @@ export class ConcreteElementA implements IElement {
   }
 }
 
-// 具体元素（ConcreteElement）角色
+/** 具体元素（ConcreteElement）角色*/
 export class ConcreteElementB implements IElement {
   accept(visitor: IVisitor): void {
     visitor.visit(this);
@@ -71,17 +68,15 @@ export class ConcreteElementB implements IElement {
   }
 }
 
-// 对象结构（Object Structure）角色
+/** 对象结构（Object Structure）角色 */
 export class ObjectStructure {
-
   private list = new Set<IElement>();
 
   accept(v: IVisitor) {
-    this.list.forEach(i => {
+    this.list.forEach((i) => {
       i.accept(v);
     });
   }
-
 
   add(el: IElement) {
     this.list.add(el);
@@ -89,7 +84,5 @@ export class ObjectStructure {
 
   remove(el: IElement) {
     this.list.delete(el);
-  };
-
-
+  }
 }

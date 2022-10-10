@@ -1,0 +1,33 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLInterface</id><coordinates><x>100</x><y>30</y><w>240</w><h>100</h></coordinates><panel_attributes>IVisitor
+--
+  visit(element: ConcreteElementA): void;
+  visit(element: ConcreteElementB): void;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>140</x><y>480</y><w>180</w><h>90</h></coordinates><panel_attributes>IElement
+--
+  accept(visitor: IVisitor): void;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>220</y><w>260</w><h>140</h></coordinates><panel_attributes>ConcreteVisitorA
+-
+
+-
+  visit(element: ConcreteElementA): void;
+  visit(element: ConcreteElementB): void;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>220</y><w>260</w><h>140</h></coordinates><panel_attributes>ConcreteVisitorB
+-
+
+-
+  visit(element: ConcreteElementA): void;
+  visit(element: ConcreteElementB): void;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>110</y><w>100</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>80;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>110</y><w>210</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;190;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>620</y><w>260</w><h>140</h></coordinates><panel_attributes>ConcreteElementA
+-
+
+-
+accept(visitor: IVisitor): void
+operationA() :void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>620</y><w>260</w><h>140</h></coordinates><panel_attributes>ConcreteElementB
+-
+
+-
+accept(visitor: IVisitor): void
+operationB() :void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>530</y><w>100</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>80;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>530</y><w>130</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;110;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>410</y><w>260</w><h>140</h></coordinates><panel_attributes>ObjectStructure
+-
+- list:Set&lt;&lt;IElement&gt;&gt;
+
+-
+accept(visitor: IVisitor): void
+add(el: IElement):void
+remove(el: IElement):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>460</y><w>280</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>260;10;10;80</additional_attributes></element></diagram>

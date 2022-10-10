@@ -33,46 +33,93 @@ export interface Pattern {
 }
 
 class PatternShow {
-
   start(): void {
     const rl = readline.createInterface({
       input: process.stdin,
-      output: process.stdout
+      output: process.stdout,
     });
 
     this.printMenu();
 
-    rl.question("请选择：", (answer: string) => {
-
+    rl.question('请选择：', (answer: string) => {
       switch (+answer) {
-        case 1: this.show(new SingletonPattern()); break;
-        case 2: this.show(new AbstractFactoryPattern()); break;
-        case 3: this.show(new FactoryMethodPattern()); break;
-        case 4: this.show(new BuilderPattern()); break;
-        case 5: this.show(new PrototypePattern()); break;
-        case 6: this.show(new SimpleFactoryPattern()); break;
+        case 1:
+          this.show(new SingletonPattern());
+          break;
+        case 2:
+          this.show(new AbstractFactoryPattern());
+          break;
+        case 3:
+          this.show(new FactoryMethodPattern());
+          break;
+        case 4:
+          this.show(new BuilderPattern());
+          break;
+        case 5:
+          this.show(new PrototypePattern());
+          break;
+        case 6:
+          this.show(new SimpleFactoryPattern());
+          break;
 
-        case 7: this.show(new AdapterPattern()); break;
-        case 8: this.show(new BridgePattern()); break;
-        case 9: this.show(new CompositePattern()); break;
-        case 10: this.show(new DecoratorPattern()); break;
-        case 11: this.show(new FacadePattern()); break;
-        case 12: this.show(new FlyweightPattern()); break;
-        case 13: this.show(new ProxyPattern()); break;
+        case 7:
+          this.show(new AdapterPattern());
+          break;
+        case 8:
+          this.show(new BridgePattern());
+          break;
+        case 9:
+          this.show(new CompositePattern());
+          break;
+        case 10:
+          this.show(new DecoratorPattern());
+          break;
+        case 11:
+          this.show(new FacadePattern());
+          break;
+        case 12:
+          this.show(new FlyweightPattern());
+          break;
+        case 13:
+          this.show(new ProxyPattern());
+          break;
 
-        case 14: this.show(new ChainOfResponsibilityPattern()); break;
-        case 15: this.show(new CommandPattern()); break;
-        case 16: this.show(new InterpreterPattern()); break;
-        case 17: this.show(new IteratorPattern()); break;
-        case 18: this.show(new MediatorPattern()); break;
-        case 19: this.show(new MementoPattern()); break;
-        case 20: this.show(new ObserverPattern()); break;
-        case 21: this.show(new StatePattern()); break;
-        case 22: this.show(new StrategyPattern()); break;
-        case 23: this.show(new TemplateMethodPattern()); break;
-        case 24: this.show(new VisitorPattern()); break;
+        case 14:
+          this.show(new ChainOfResponsibilityPattern());
+          break;
+        case 15:
+          this.show(new CommandPattern());
+          break;
+        case 16:
+          this.show(new InterpreterPattern());
+          break;
+        case 17:
+          this.show(new IteratorPattern());
+          break;
+        case 18:
+          this.show(new MediatorPattern());
+          break;
+        case 19:
+          this.show(new MementoPattern());
+          break;
+        case 20:
+          this.show(new ObserverPattern());
+          break;
+        case 21:
+          this.show(new StatePattern());
+          break;
+        case 22:
+          this.show(new StrategyPattern());
+          break;
+        case 23:
+          this.show(new TemplateMethodPattern());
+          break;
+        case 24:
+          this.show(new VisitorPattern());
+          break;
 
-        default: break;
+        default:
+          break;
       }
       rl.close();
     });
@@ -113,11 +160,10 @@ class PatternShow {
       24: Visitor \n
     `;
 
-    console.log("==== 选择一个demo实例运行 ====");
-    console.log("\n");
+    console.log('==== 选择一个demo实例运行 ====');
+    console.log('\n');
     console.log(menu);
   }
 }
-
 
 new PatternShow().start();
