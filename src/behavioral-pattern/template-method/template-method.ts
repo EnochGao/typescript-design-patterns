@@ -13,9 +13,9 @@
  *
  * 具体子类/具体实现（Concrete Class）
  * 具体实现类，实现抽象类中所定义的抽象方法和钩子方法，它们是一个顶级逻辑的一个组成步骤。
-*/
+ */
 
-// 抽象类/抽象模板（Abstract Class）
+/** 抽象类/抽象模板（Abstract Class） */
 abstract class AbstractClass {
   abstract abstractMethod1(): void;
   abstract abstractMethod2(): void;
@@ -31,7 +31,7 @@ abstract class AbstractClass {
   }
 }
 
-// 具体子类/具体实现
+/** 具体子类/具体实现 */
 export class ConcreteClass extends AbstractClass {
   abstractMethod1(): void {
     console.log('子类中的具体方法Method1被调用...');

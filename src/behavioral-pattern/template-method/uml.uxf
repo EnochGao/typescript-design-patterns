@@ -1,0 +1,12 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>160</x><y>70</y><w>260</w><h>140</h></coordinates><panel_attributes>/AbstractClass/
+-
+
+-
+
+abstract abstractMethod1(): void;
+abstract abstractMethod2(): void;
+specificMethod():void;
+templateMethod():void;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>360</y><w>260</w><h>100</h></coordinates><panel_attributes>ConcreteClass
+-
+
+strategyMethod(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>200</y><w>30</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element></diagram>
