@@ -5,14 +5,14 @@
  * - 2.抽象状态（State）角色：定义一个接口，用以封装环境对象中的特定状态所对应的行为，可以有一个或多个行为。
  * - 3.具体状态（Concrete State）角色：实现抽象状态所对应的行为，并且在需要的情况下进行状态切换。。
  *
-*/
+ */
 
-// 抽象状态（State）角色
+/** 抽象状态（State）角色 */
 export abstract class State {
   abstract handle(c: Context): void;
 }
 
-// 环境类（Context）角色
+/** 环境类（Context）角色 */
 export class Context {
   private state: State;
 
@@ -27,10 +27,9 @@ export class Context {
   handle() {
     this.state.handle(this);
   }
-
 }
 
-// 具体状态（Concrete State）角色
+/** 具体状态（Concrete State）角色 */
 export class ConcreteStateA extends State {
   handle(c: Context): void {
     console.log('当前状态是 A');
@@ -38,7 +37,7 @@ export class ConcreteStateA extends State {
   }
 }
 
-// 具体状态（Concrete State）角色
+/** 具体状态（Concrete State）角色 */
 class ConcreteStateB extends State {
   handle(c: Context): void {
     console.log('当前状态是 B');
