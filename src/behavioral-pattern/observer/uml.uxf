@@ -1,0 +1,17 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>80</x><y>140</y><w>260</w><h>140</h></coordinates><panel_attributes>/Subject/
+-
+ - observers: Array&lt;IObserver&gt;
+-
+
+abstract notice(): void
+add(observer: IObserver): void
+remove(observer: IObserver): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>330</y><w>260</w><h>100</h></coordinates><panel_attributes>ConcreteSubject
+-
+
+notice(): void </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>480</x><y>50</y><w>120</w><h>90</h></coordinates><panel_attributes>IObserver
+--
+response(): void;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>110</y><w>40</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>20;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>260</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>280</y><w>260</w><h>100</h></coordinates><panel_attributes>ConcreteObserverA
+-
+
+response(): void </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>190</y><w>120</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;90</additional_attributes></element></diagram>

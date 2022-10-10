@@ -7,9 +7,9 @@
  * - 3.抽象观察者（Observer）角色：它是一个抽象类或接口，它包含了一个更新自己的抽象方法，当接到具体主题的更改通知时被调用。
  * - 4.具体观察者（Concrete Observer）角色：实现抽象观察者中定义的抽象方法，以便在得到目标的更改通知时更新自身的状态。
  *
-*/
+ */
 
-// 抽象主题（Subject）角色
+/** 抽象主题（Subject）角色 */
 export abstract class Subject {
   abstract notice(): void;
 
@@ -17,41 +17,36 @@ export abstract class Subject {
 
   add(observer: IObserver): void {
     this.observers.push(observer);
-  };
+  }
   remove(observer: IObserver): void {
-    this.observers = this.observers.filter(i => i !== observer);
-  };
+    this.observers = this.observers.filter((i) => i !== observer);
+  }
 }
 
-// 抽象观察者（Observer）角色
+/** 抽象观察者（Observer）角色 */
 export interface IObserver {
   response(): void;
 }
 
-// 具体主题（Concrete Subject）角色
+/** 具体主题（Concrete Subject）角色 */
 export class ConcreteSubject extends Subject {
-
   notice(): void {
-    this.observers.forEach(o => {
+    this.observers.forEach((o) => {
       o.response();
     });
   }
-
 }
 
-// 具体观察者（Concrete Observer）角色
+/** 具体观察者（Concrete Observer）角色 */
 export class ConcreteObserverA implements IObserver {
-
   response(): void {
     console.log('ConcreteObserverA收到通知');
   }
 }
 
-// 具体观察者（Concrete Observer）角色
+/** 具体观察者（Concrete Observer）角色 */
 export class ConcreteObserverB implements IObserver {
-
   response(): void {
     console.log('ConcreteObserverB收到通知');
   }
-
 }
