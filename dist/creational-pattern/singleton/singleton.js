@@ -16,7 +16,7 @@ var LazySingleton = /** @class */ (function () {
     return LazySingleton;
 }());
 exports.LazySingleton = LazySingleton;
-var HungrySingleton = /** @class */ (function () {
+var HungrySingleton = exports.HungrySingleton = /** @class */ (function () {
     function HungrySingleton(name) {
         this.name = name;
     }
@@ -26,4 +26,3 @@ var HungrySingleton = /** @class */ (function () {
     HungrySingleton.instance = new HungrySingleton('饿汉式');
     return HungrySingleton;
 }());
-exports.HungrySingleton = HungrySingleton;

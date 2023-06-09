@@ -1,32 +1,32 @@
-import * as readline from 'readline';
+import * as readline from "readline";
 
-import { SimpleFactoryPattern } from './creational-pattern/simple-factory/index';
+import { SimpleFactoryPattern } from "./creational-pattern/simple-factory/index";
 
-import { BuilderPattern } from './creational-pattern/builder/index';
-import { PrototypePattern } from './creational-pattern/prototype/index';
-import { SingletonPattern } from './creational-pattern/singleton/index';
-import { FactoryMethodPattern } from './creational-pattern/factory-method/index';
-import { AbstractFactoryPattern } from './creational-pattern/abstract-factory/index';
+import { BuilderPattern } from "./creational-pattern/builder/index";
+import { PrototypePattern } from "./creational-pattern/prototype/index";
+import { SingletonPattern } from "./creational-pattern/singleton/index";
+import { FactoryMethodPattern } from "./creational-pattern/factory-method/index";
+import { AbstractFactoryPattern } from "./creational-pattern/abstract-factory/index";
 
-import { AdapterPattern } from './structural-pattern/adapter/index';
-import { BridgePattern } from './structural-pattern/bridge/index';
-import { CompositePattern } from './structural-pattern/composite';
-import { DecoratorPattern } from './structural-pattern/decorator';
-import { FlyweightPattern } from './structural-pattern/flyweight';
-import { FacadePattern } from './structural-pattern/facade';
-import { ProxyPattern } from './structural-pattern/proxy';
+import { AdapterPattern } from "./structural-pattern/adapter/index";
+import { BridgePattern } from "./structural-pattern/bridge/index";
+import { CompositePattern } from "./structural-pattern/composite";
+import { DecoratorPattern } from "./structural-pattern/decorator";
+import { FlyweightPattern } from "./structural-pattern/flyweight";
+import { FacadePattern } from "./structural-pattern/facade";
+import { ProxyPattern } from "./structural-pattern/proxy";
 
-import { IteratorPattern } from './behavioral-pattern/Iterator';
-import { MediatorPattern } from './behavioral-pattern/mediator';
-import { CommandPattern } from './behavioral-pattern/command';
-import { InterpreterPattern } from './behavioral-pattern/interpreter';
-import { ChainOfResponsibilityPattern } from './behavioral-pattern/chain-of-responsibility';
-import { MementoPattern } from './behavioral-pattern/memento';
-import { ObserverPattern } from './behavioral-pattern/observer';
-import { StatePattern } from './behavioral-pattern/state';
-import { StrategyPattern } from './behavioral-pattern/strategy';
-import { TemplateMethodPattern } from './behavioral-pattern/template-method';
-import { VisitorPattern } from './behavioral-pattern/visitor';
+import { IteratorPattern } from "./behavioral-pattern/Iterator";
+import { MediatorPattern } from "./behavioral-pattern/mediator";
+import { CommandPattern } from "./behavioral-pattern/command";
+import { InterpreterPattern } from "./behavioral-pattern/interpreter";
+import { ChainOfResponsibilityPattern } from "./behavioral-pattern/chain-of-responsibility";
+import { MementoPattern } from "./behavioral-pattern/memento";
+import { ObserverPattern } from "./behavioral-pattern/observer";
+import { StatePattern } from "./behavioral-pattern/state";
+import { StrategyPattern } from "./behavioral-pattern/strategy";
+import { TemplateMethodPattern } from "./behavioral-pattern/template-method";
+import { VisitorPattern } from "./behavioral-pattern/visitor";
 
 export interface Pattern {
   show(): void;
@@ -41,7 +41,7 @@ class PatternShow {
 
     this.printMenu();
 
-    rl.question('请选择：', (answer: string) => {
+    rl.question("请选择：", (answer: string) => {
       switch (+answer) {
         case 1:
           this.show(new SingletonPattern());
@@ -131,37 +131,38 @@ class PatternShow {
 
   private printMenu(): void {
     const menu: string = `
-      = 创建型 == \n
-      1: Singleton \n
-      2: Abstract factory \n
-      3: Factory method \n
-      4: Builder \n
-      5: Prototype \n
-      6: SimpleFactory \n\n
-      = 结构型 == \n
-      7: Adapter \n
-      8: Bridge \n
-      9: Composite \n
-      10: Decorator \n
-      11: Facade \n
-      12: Flyweight \n
-      13: Proxy \n\n
-      = 行为型 == \n
-      14: Chain of responsibility \n
-      15: Command \n
-      16: Interpreter \n
-      17: Iterator \n
-      18: Mediator \n
-      19: Memento \n
-      20: Observer \n
-      21: State \n
-      22: Strategy \n
-      23: Template method \n
-      24: Visitor \n
+      ********** 创建型 ********** 
+      1: Singleton 
+      2: Abstract factory 
+      3: Factory method 
+      4: Builder 
+      5: Prototype 
+      6: SimpleFactory 
+
+      ********** 结构型 **********
+      7: Adapter 
+      8: Bridge 
+      9: Composite 
+      10: Decorator 
+      11: Facade 
+      12: Flyweight 
+      13: Proxy 
+
+      ********** 行为型 **********
+      14: Chain of responsibility 
+      15: Command 
+      16: Interpreter 
+      17: Iterator 
+      18: Mediator 
+      19: Memento 
+      20: Observer 
+      21: State 
+      22: Strategy 
+      23: Template method 
+      24: Visitor 
     `;
 
-    console.log('==== 选择一个demo实例运行 ====');
-    console.log('\n');
+    console.log(`>>>选择一个demo实例运行:`);
     console.log(menu);
   }
 }

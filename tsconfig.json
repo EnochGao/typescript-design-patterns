@@ -1,19 +1,12 @@
 {
   "compilerOptions": {
+    "strict": false,
     "noImplicitAny": true,
     "baseUrl": "./",
     "module": "commonjs",
     "target": "es5",
-    "outDir": "./dist",
-    "strict": false
+    "outDir": "./dist"
   },
-  "include": [
-    "src/**/*.ts",
-    "src/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "test",
-  ]
+  "include": ["src/**/*.ts", "src/*.ts"],
+  "exclude": ["node_modules", "dist", "test"]
 }

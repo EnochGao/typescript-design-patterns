@@ -8,7 +8,7 @@
  * - 3.抽象观察者（Observer）角色：它是一个抽象类或接口，它包含了一个更新自己的抽象方法，当接到具体主题的更改通知时被调用。
  * - 4.具体观察者（Concrete Observer）角色：实现抽象观察者中定义的抽象方法，以便在得到目标的更改通知时更新自身的状态。
  *
-*/
+ */
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -26,7 +26,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ConcreteObserverB = exports.ConcreteObserverA = exports.ConcreteSubject = exports.Subject = void 0;
-// 抽象主题（Subject）角色
+/** 抽象主题（Subject）角色 */
 var Subject = /** @class */ (function () {
     function Subject() {
         this.observers = [];
@@ -34,15 +34,13 @@ var Subject = /** @class */ (function () {
     Subject.prototype.add = function (observer) {
         this.observers.push(observer);
     };
-    ;
     Subject.prototype.remove = function (observer) {
         this.observers = this.observers.filter(function (i) { return i !== observer; });
     };
-    ;
     return Subject;
 }());
 exports.Subject = Subject;
-// 具体主题（Concrete Subject）角色
+/** 具体主题（Concrete Subject）角色 */
 var ConcreteSubject = /** @class */ (function (_super) {
     __extends(ConcreteSubject, _super);
     function ConcreteSubject() {
@@ -56,7 +54,7 @@ var ConcreteSubject = /** @class */ (function (_super) {
     return ConcreteSubject;
 }(Subject));
 exports.ConcreteSubject = ConcreteSubject;
-// 具体观察者（Concrete Observer）角色
+/** 具体观察者（Concrete Observer）角色 */
 var ConcreteObserverA = /** @class */ (function () {
     function ConcreteObserverA() {
     }
@@ -66,7 +64,7 @@ var ConcreteObserverA = /** @class */ (function () {
     return ConcreteObserverA;
 }());
 exports.ConcreteObserverA = ConcreteObserverA;
-// 具体观察者（Concrete Observer）角色
+/** 具体观察者（Concrete Observer）角色 */
 var ConcreteObserverB = /** @class */ (function () {
     function ConcreteObserverB() {
     }

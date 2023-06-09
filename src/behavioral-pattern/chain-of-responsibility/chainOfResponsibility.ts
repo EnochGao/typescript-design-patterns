@@ -8,44 +8,40 @@
 
 // 抽象处理者（Handler）角色
 export abstract class Handler {
-  private nest: Handler;
-
-  setNest(nest: Handler) {
-    this.nest = nest;
-  }
-
-
-  getNest() {
-    return this.nest;
-  }
-
   abstract handleRequest(): void;
+  private next: Handler;
+
+  setNext(next: Handler) {
+    this.next = next;
+  }
+
+  getNext() {
+    return this.next;
+  }
 }
 
 // 具体处理者（Concrete Handler）角色
 export class ConcreteHandle1 extends Handler {
-
   handleRequest(): void {
-    console.log('步骤1');
-    const nest = this.getNest();
-    if (nest) {
-      nest.handleRequest();
+    console.log("步骤1");
+    const next = this.getNext();
+    if (next) {
+      next.handleRequest();
     } else {
-      console.log('处理完成');
+      console.log("处理完成");
     }
   }
 }
 
 // 具体处理者（Concrete Handler）角色
 export class ConcreteHandle2 extends Handler {
-
   handleRequest(): void {
-    console.log('步骤2');
-    const nest = this.getNest();
-    if (nest) {
-      nest.handleRequest();
+    console.log("步骤2");
+    const next = this.getNext();
+    if (next) {
+      next.handleRequest();
     } else {
-      console.log('处理完成');
+      console.log("处理完成");
     }
   }
 }

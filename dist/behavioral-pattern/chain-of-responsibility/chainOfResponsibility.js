@@ -27,11 +27,11 @@ exports.ConcreteHandle2 = exports.ConcreteHandle1 = exports.Handler = void 0;
 var Handler = /** @class */ (function () {
     function Handler() {
     }
-    Handler.prototype.setNest = function (nest) {
-        this.nest = nest;
+    Handler.prototype.setNext = function (next) {
+        this.next = next;
     };
-    Handler.prototype.getNest = function () {
-        return this.nest;
+    Handler.prototype.getNext = function () {
+        return this.next;
     };
     return Handler;
 }());
@@ -43,13 +43,13 @@ var ConcreteHandle1 = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     ConcreteHandle1.prototype.handleRequest = function () {
-        console.log('步骤1');
-        var nest = this.getNest();
-        if (nest) {
-            nest.handleRequest();
+        console.log("步骤1");
+        var next = this.getNext();
+        if (next) {
+            next.handleRequest();
         }
         else {
-            console.log('处理完成');
+            console.log("处理完成");
         }
     };
     return ConcreteHandle1;
@@ -62,13 +62,13 @@ var ConcreteHandle2 = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     ConcreteHandle2.prototype.handleRequest = function () {
-        console.log('步骤2');
-        var nest = this.getNest();
-        if (nest) {
-            nest.handleRequest();
+        console.log("步骤2");
+        var next = this.getNext();
+        if (next) {
+            next.handleRequest();
         }
         else {
-            console.log('处理完成');
+            console.log("处理完成");
         }
     };
     return ConcreteHandle2;

@@ -23,19 +23,19 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ConcreteComponent = exports.ConcreteDecorator = exports.IDecorator = void 0;
+exports.ConcreteComponent = exports.ConcreteDecorator = exports.Decorator = void 0;
 // 抽象装饰角色
-var IDecorator = /** @class */ (function () {
-    function IDecorator(component) {
+var Decorator = /** @class */ (function () {
+    function Decorator(component) {
         this.component = component;
     }
-    IDecorator.prototype.operation = function () {
+    Decorator.prototype.operation = function () {
         this.component.operation();
     };
     ;
-    return IDecorator;
+    return Decorator;
 }());
-exports.IDecorator = IDecorator;
+exports.Decorator = Decorator;
 //具体装饰角色
 var ConcreteDecorator = /** @class */ (function (_super) {
     __extends(ConcreteDecorator, _super);
@@ -50,7 +50,7 @@ var ConcreteDecorator = /** @class */ (function (_super) {
         console.log("为具体构件角色增加额外的功能addedFunction()");
     };
     return ConcreteDecorator;
-}(IDecorator));
+}(Decorator));
 exports.ConcreteDecorator = ConcreteDecorator;
 //具体构件角色
 var ConcreteComponent = /** @class */ (function () {

@@ -23,6 +23,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.RefinedAbstraction = exports.ConcreteImplementorA = exports.Abstraction = void 0;
+// 抽象化（Abstraction）角色
 var Abstraction = /** @class */ (function () {
     function Abstraction(implementor) {
         this.implementor = implementor;

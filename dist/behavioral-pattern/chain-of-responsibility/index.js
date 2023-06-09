@@ -11,7 +11,7 @@ var ChainOfResponsibilityPattern = /** @class */ (function () {
     ChainOfResponsibilityPattern.prototype.show = function () {
         var h1 = new chainOfResponsibility_1.ConcreteHandle1();
         var h2 = new chainOfResponsibility_1.ConcreteHandle2();
-        h1.setNest(h2);
+        h1.setNext(h2);
         h1.handleRequest();
     };
     return ChainOfResponsibilityPattern;

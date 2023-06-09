@@ -11,9 +11,9 @@
   "author": "EnochGao",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^4.5.5"
+    "typescript": "^5.1.0"
   },
   "devDependencies": {
-    "@types/node": "^17.0.13"
+    "@types/node": "^20.2.0"
   }
 }
