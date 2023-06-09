@@ -1,10 +1,10 @@
-<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>400</x><y>100</y><w>200</w><h>120</h></coordinates><panel_attributes>/Handler/
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>400</x><y>100</y><w>200</w><h>120</h></coordinates><panel_attributes>/Handler/
 -
-- nest: Handler
+- next: Handler
 -
 /handleRequest(): void;/
- getNest():Handler;
- setNest(nest: Handler)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>380</y><w>200</w><h>100</h></coordinates><panel_attributes>ConcreteHandle1
+ getNext():Handler;
+ setNext(next: Handler)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>380</y><w>200</w><h>100</h></coordinates><panel_attributes>ConcreteHandle1
 -
 
 -
