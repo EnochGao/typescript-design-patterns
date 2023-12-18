@@ -10,10 +10,8 @@
   },
   "author": "EnochGao",
   "license": "ISC",
-  "dependencies": {
-    "typescript": "^5.1.0"
-  },
   "devDependencies": {
-    "@types/node": "^20.2.0"
+    "@types/node": "^20.2.0",
+    "typescript": "^5.3.3"
   }
 }
